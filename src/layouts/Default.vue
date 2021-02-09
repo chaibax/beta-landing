@@ -95,6 +95,11 @@ body {
     background: #FCFCFC;
 }
 
+.rf-service__title {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
 .rf-header {
     box-shadow: none;
     border-bottom: 1px solid #F2F2F2;
@@ -113,7 +118,7 @@ body {
 
 
 h2 {
-    font-size: 1.8em;
+    font-size: 2.2em;
     text-align: left;
 }
 
