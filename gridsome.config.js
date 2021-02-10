@@ -55,7 +55,7 @@ module.exports = {
     ],
 
     templates: {
-        Event: "/events/:id"
+        //Event: "/events/:id"
     }
 
 }
