@@ -1,6 +1,24 @@
 <template>
 
     <div class="layout">
+
+      <div class="rf-skiplinks">
+        <div class="rf-container">
+          <ul class="rf-skiplinks__list">
+            <li>
+              <a class="rf-link" href="#content">Accéder au contenu</a>
+            </li>
+            <li>
+              <a class="rf-link" href="#header-navigation">Accéder au menu</a>
+            </li>
+            <li>
+              <a class="rf-link" href="#footer">Accéder au pied de page</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
         <header class="rf-header">
             <div class="rf-container">
                 <div class="rf-header__body">
@@ -21,7 +39,7 @@
                     </div>
                 </div>
 
-                <nav class="rf-nav" role="navigation" aria-label="Menu principal">
+                <nav id="header-navigation" class="rf-nav" role="navigation" aria-label="Menu principal">
                    <ul class="rf-nav__list">
                       <li class="rf-nav__item">
                          <a class="rf-link" href="/" target="_self">Services</a>
@@ -40,7 +58,9 @@
             </div>
         </header>
 
-    <slot/>
+        <div id="content">
+          <slot/>
+        </div>
 
     <footer class="rf-footer" role="contentinfo" id="footer">
         <div class="rf-container">
@@ -66,7 +86,7 @@
             <div class="rf-footer__bottom">
                 <ul class="rf-footer__bottom-list">
                     <li class="rf-footer__bottom-item">
-                        <a class="rf-footer__bottom-link" href="#">Accessibilité: non/partiellement/totalement conforme</a>
+                        <a class="rf-footer__bottom-link" href="#">Accessibilité non conforme</a>
                     </li>
                 </ul>
                 <div class="rf-footer__bottom-copy">
