@@ -18,7 +18,7 @@
                         <time>{{ edge.node.debut | formatDate }}</time>
                         <div>
                             <h4>{{ edge.node.titre }}</h4>
-                            <a v-if="edge.node.compteRendu != ''" :href="edge.node.compteRendu" class="rf-link">Voir le compte rendu</a>
+                            <a v-if="edge.node.compteRendu != ''" :href="edge.node.compteRendu" class="rf-link">Voir le compte rendu<span class="rf-fi-external-link-line"></span></a>
                         </div>
                     </div>
                  </div>
@@ -109,6 +109,11 @@ export default {
         display: inline-block;
         margin: 0;
         margin-right: 1em;
+    }
+
+    .rf-link .rf-fi-external-link-line {
+        margin-left: .5em;
+        color: var(--bf500);
     }
 
 
