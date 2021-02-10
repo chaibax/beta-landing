@@ -17,7 +17,7 @@
                         <div><p class="rf-tag">{{ edge.node.type.name }}</p></div>
                         <time>{{ edge.node.debut | formatDate }}</time>
                         <div>
-                            <h2>{{ edge.node.titre }}</h2>
+                            <h2 class="rf-h4">{{ edge.node.titre }}</h2>
                             <a v-if="edge.node.compteRendu != ''" :href="edge.node.compteRendu" class="rf-link">Voir le compte rendu</a>
                         </div>
                     </div>
