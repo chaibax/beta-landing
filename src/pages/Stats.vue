@@ -16,7 +16,7 @@
                         <div class="rf-grid-row rf-grid-row--gutters">
 
                             <div class=" rf-col-12 rf-col-md-5">
-                                <img src="images/startups.svg" alt="Illustration d'une équipe au travail" />
+                                <img src="images/startups.svg" alt="" />
                                 <div class="rf-highlight">
                                     Nous accompagnons les Startups d'Etat dans leur recherche utilisateur, l'organisation d'entretiens ou de tests, la réalisation de prototypes ou le recrutement d'un designer.
                                 </div>
@@ -65,7 +65,7 @@
                         <div class="rf-grid-row rf-grid-row--gutters">
 
                             <div class="rf-col-12 rf-col-md-5">
-                                <img src="images/designers.svg" alt="Illustration d'un designer" />
+                                <img src="images/designers.svg" alt="" />
                                 <div class="rf-highlight">
                                     Nous accueillons les designers, leur fournissons des supports de travail et de communication,
                                     et diffusons des bonnes pratiques de conception pour les produits.
@@ -110,7 +110,7 @@
                         <div class="rf-grid-row rf-grid-row--gutters">
 
                             <div class="rf-col-12 rf-col-md-5">
-                                <img src="images/community.svg" alt="Illustration de plusieurs personnes au travail" />
+                                <img src="images/community.svg" alt="" />
                                 <div class="rf-highlight">
                                     Pour l'ensemble de la communauté, nous proposons des formations, des évènements liés au design
                                     et aux bonnes pratiques dans les Startups.
