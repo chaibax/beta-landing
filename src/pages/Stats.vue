@@ -18,7 +18,7 @@
                             <div class=" rf-col-12 rf-col-md-5">
                                 <img src="images/startups.svg" alt="Illustration d'une équipe au travail" />
                                 <div class="rf-highlight">
-                                    Nous accompagnons les Startups d'Etat dans leur recherche utilisateur, l'organisation d'entretiens ou de tests, la réalisation de prototypes ou le recrutement d'un designer.
+                                    Nous accompagnons les Startups d'État dans leur recherche utilisateur, l'organisation d'entretiens ou de tests, la réalisation de prototypes ou le recrutement d'un·e designer.
                                 </div>
                             </div>
 
@@ -26,18 +26,18 @@
                                 <div class="kpis">
                                     <div class="kpi">
                                         <strong>35</strong>
-                                        <h3>Startups accompagnées par l'équipe transverse</h3>
-                                        <p>Dans le cadre d'un atelier ou d'une mission</p>
+                                        <h3>équipes accompagnées par les designers transverses</h3>
+                                        <p>Startups d'État ayant bénéficié d'un atelier ou d'une mission courte.</p>
                                     </div>
                                     <div class="kpi">
                                         <strong>59%</strong>
-                                        <h3>Startups accompagnées par un designer</h3>
-                                        <p>Depuis leur création jusqu'à aujourd'hui</p>
+                                        <h3>équipes accompagnées par un·e designer</h3>
+                                        <p>Startups d'État ayant accueilli un·e designer à temps plein ou ponctuellement.</p>
                                     </div>
                                     <div class="kpi">
                                           <strong>45%</strong>
-                                        <h3>De jeunes pousses accompagnées</h3>
-                                        <p>Start-ups en phase d'investigation ou de construction</p>
+                                        <h3>de jeunes pousses accompagnées</h3>
+                                        <p>Start-ups d'État en phase d'investigation ou de construction suivies par l'équipe transverse.</p>
                                     </div>
                                 </div>
 
@@ -263,6 +263,9 @@ section.community .kpi strong {
     margin: 1em;
     max-width: 36%;
     margin-right: 5%;
+}
+.kpi:last-child {
+  max-width: 50%;
 }
 
 .kpi h3 {
