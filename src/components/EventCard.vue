@@ -6,11 +6,13 @@
         </div>
         <div class="rf-card__body">
             <time class="rf-card__detail">{{ event.debut | formatDateTime }}</time>
-            <h4 class="rf-card__title">{{ event.sujet }}</h4>
-            <p class="rf-card__desc">{{ event.name }}</p>
-            <!--<p class="rf-card__detail">pour {{ event.type.pour }}</p>-->
-            <div class="action" v-if="event.inscription">
-                <a :href="event.inscription" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Participer</a>
+            <h4 v-if="event.titre" class="rf-card__title">{{ event.titre }}</h4>
+            <p class="rf-card__desc">{{ event.name }}
+                <span class="rf-tg">{{ event.type.pour }}</span>
+            </p>
+
+            <div class="action" >
+                <a v-if="event.inscription" :href="event.inscription" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Réserver</a>
             </div>
 
         </div>
@@ -48,7 +50,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
     time {
         color: #00AC8C;
         font-weight: 600;
@@ -60,18 +62,24 @@ export default {
         background-position: center center;
 
         text-align:center;
+
+        .rf-tag {
+            background: #FFF;
+            font-weight: 600;
+        }
     }
+
 
     .rf-tag {
         display: inline-block;
-        background: #FFF;
-        font-weight: 600;
     }
 
-
     .action {
-        position: absolute;
-        bottom: 1em;
+        //position: absolute;
+        //bottom: 1em;
+        //align-self: flex-end;
+       //justify-self: end;
+       margin-top: auto;
     }
     .rf-btn {
         border-radius: 100px;

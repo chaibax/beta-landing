@@ -109,7 +109,7 @@ export default {
 <page-query>
 query Event ($id: ID!) {
   event: event(id: $id) {
-    sujet
+    titre
   }
 }
 </page-query>
