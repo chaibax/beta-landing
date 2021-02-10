@@ -67,13 +67,13 @@ export default {
     computed: {
         incomingEvents: function () {
             return this.$page.events.edges
-                .filter(event => moment(event.node.debut) >= moment())
+                .filter(event => moment(event.node.debut) >= moment().startOf('day'))
                 .sort(function (a,b) { return  moment(a.node.debut) > moment(b.node.debut)} );
 
         },
         pastEvents: function () {
            return this.$page.events.edges
-                .filter(event => moment(event.node.debut) <= moment())
+                .filter(event => moment(event.node.debut) <= moment().startOf('day'))
                 .sort(function (a,b) { return  moment(a.node.debut) < moment(b.node.debut)} );
         }
     },
