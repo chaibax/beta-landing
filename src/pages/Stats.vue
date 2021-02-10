@@ -68,7 +68,7 @@
                                 <img src="images/designers.svg" alt="Illustration d'un designer" />
                                 <div class="rf-highlight">
                                     Nous accueillons les designers, leur fournissons des supports de travail et de communication,
-                                    et diffusons des bonnes pratiques de conception pour les produits.
+                                    et diffusons des bonnes pratiques de conception pour leurs services numériques.
                                 </div>
                             </div>
 
@@ -76,18 +76,19 @@
                                 <div class="kpis">
                                     <div class="kpi">
                                         <strong>26</strong>
-                                        <h3>Designers dans la communauté</h3>
-                                        <p>Dans l'équipe transverse ou dans une SE</p>
+                                        <h3>designers dans la communauté</h3>
+                                        <p>Designers ayant intégré une startup d'État ou l'équipe transverse.</p>
                                     </div>
                                     <div class="kpi">
                                         <strong>35%</strong>
-                                        <h3>De designers engagés</h3>
-                                        <p>Présents à notre dernier séminaire</p>
+                                        <h3>de designers engagés</h3>
+                                        <!-- TODO : lien vers les prochains séminaires -->
+                                        <p>Taux de présence lors du dernier <a href="#">Séminaire Designer <span class="rf-fi-external-link-line"></span></a>.</p>
                                     </div>
                                     <div class="kpi">
                                         <strong>121</strong>
-                                        <h3>Retours d'expérience partagés à la communauté</h3>
-                                        <p>Documents de travail, maquettes, retours <br> <a href="#">Voir les documents</a></p>
+                                        <h3>retours d'expérience</h3>
+                                        <p>Documents de travail, maquettes, restitution d'ateliers <a href="#">partagés à la communauté <span class="rf-fi-external-link-line"></span></a>.</p>
 
                                     </div>
                                 </div>
