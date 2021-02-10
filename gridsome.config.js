@@ -6,9 +6,8 @@
 
 module.exports = {
     siteName: 'Designers transverses',
+
     plugins: [
-
-
         // Évènements
         {
           use: '@gridsome/source-airtable',
