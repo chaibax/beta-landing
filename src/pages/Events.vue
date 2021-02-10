@@ -37,6 +37,7 @@
           sujet
           pour
           debut
+          inscription
           compteRendu
           type {
             name
