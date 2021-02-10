@@ -77,17 +77,18 @@
                                     <div class="kpi">
                                         <strong>26</strong>
                                         <h3>Designers dans la communauté</h3>
-                                        <p>Dans le cadre d'un atelier ou d'une mission</p>
+                                        <p>Dans l'équipe transverse ou dans une SE</p>
                                     </div>
                                     <div class="kpi">
                                         <strong>35%</strong>
-                                        <h3>Onboardés, ou dans nos échanges réguliers</h3>
-                                        <p>Depuis leur création jusqu'à aujourd'hui</p>
+                                        <h3>De designers engagés</h3>
+                                        <p>Présents à notre dernier séminaire</p>
                                     </div>
                                     <div class="kpi">
-                                        <strong>4.2</strong>
-                                        <h3>Indice de satisfaction</h3>
-                                        <p>Suite à l'évaluation de nos interventions</p>
+                                        <strong>121</strong>
+                                        <h3>Retours d'expérience partagés à la communauté</h3>
+                                        <p>Documents de travail, maquettes, retours <br> <a href="#">Voir les documents</a></p>
+
                                     </div>
                                 </div>
                             </div>
@@ -125,14 +126,14 @@
 
                                     </div>
                                     <div class="kpi">
-                                        <strong>6</strong>
-                                        <h3>Formations design accessibles en ligne</h3>
-                                        <p>Depuis leur création jusqu'à aujourd'hui</p>
+                                        <strong>87</strong>
+                                        <h3>Participations à nos évènements</h3>
+                                        <p>De l'ensemble de la communauté</p>
                                     </div>
                                     <div class="kpi">
-                                        <strong>4.2</strong>
-                                        <h3>Satisfaction des usagers</h3>
-                                        <p>Evaluation avec vox usagers</p>
+                                        <strong>4.2<em> / 5</em></strong>
+                                        <h3>Satisfaction globale des usagers</h3>
+                                        <p>Lors de nos évènements</p>
                                     </div>
                                 </div>
                             </div>
@@ -277,6 +278,11 @@ section.community .kpi strong {
     /*color: #000091;*/
 
     line-height: 1.2;
+}
+
+.kpi em {
+    font-weight: normal;
+    font-size: 1.5rem;
 }
 
 .kpi p {
