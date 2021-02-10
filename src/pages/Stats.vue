@@ -228,10 +228,10 @@ section:nth-child(2n):after {
 /* Colors */
 
 section.startups .rf-highlight {
-    border-left-color: #00AC8C;;
+    border-left-color: #008262;;
 }
 section.startups .kpi strong {
-    color: #00AC8C;
+    color: #008262;
 }
 
 section.designers .rf-highlight {
@@ -242,10 +242,10 @@ section.designers .kpi strong {
 }
 
 section.community .rf-highlight {
-    border-left-color: #FF6F4C;;
+    border-left-color: #f56542;
 }
 section.community .kpi strong {
-    color: #FF6F4C;
+    color: #f56542;
 }
 
 

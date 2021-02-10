@@ -52,7 +52,7 @@ export default {
 
 <style lang="scss" scoped>
     time {
-        color: #00AC8C;
+        color: #008262;
         font-weight: 600;
     }
 
