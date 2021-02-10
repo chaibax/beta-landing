@@ -24,7 +24,7 @@
             <div class="rf-container">
                 <div class="rf-header__body">
                     <div class="rf-header__brand">
-                        <a class="rf-logo" href="#" title="République française">
+                        <a class="rf-logo" href="/" title="République française">
                             <span class="rf-logo__title">République
                             <br>
                              française</span>
@@ -32,7 +32,7 @@
                     </div>
                     <div class="rf-header__navbar">
                         <div class="rf-service">
-                            <a class="rf-service__title" href="#" title="Nom du service">
+                            <a class="rf-service__title" href="/" title="Nom du service">
                                 {{ $static.metadata.siteName }}
                             </a>
                             <p class="rf-service__tagline">beta.gouv.fr</p>
