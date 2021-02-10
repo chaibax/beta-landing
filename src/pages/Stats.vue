@@ -167,6 +167,10 @@ import Layout from "~/layouts/Default.vue";
 
 
 export default {
+    metaInfo: {
+        title: 'Statistiques',
+    },
+
     components: {
         Layout,
     },

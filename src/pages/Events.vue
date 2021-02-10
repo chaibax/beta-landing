@@ -61,6 +61,10 @@ import moment from 'moment'
 const now = moment()
 
 export default {
+    metaInfo: {
+        title: 'Évènements',
+    },
+
     components: {
         Layout,
         EventCard,

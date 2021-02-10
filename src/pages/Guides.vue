@@ -50,6 +50,10 @@ import moment from 'moment'
 const now = moment()
 
 export default {
+    metaInfo: {
+        title: 'Guides',
+    },
+
     components: {
         Layout,
         EventCard,
