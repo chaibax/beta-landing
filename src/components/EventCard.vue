@@ -6,7 +6,7 @@
         </div>
         <div class="rf-card__body">
             <time class="rf-card__detail">{{ event.debut | formatDateTime }}</time>
-            <h4 v-if="event.titre" class="rf-card__title">{{ event.titre }}</h4>
+            <h2 v-if="event.titre" class="rf-card__title">{{ event.titre }}</h2>
             <p class="rf-card__desc">{{ event.name }}
                 <span class="rf-tg">{{ event.type.pour }}</span>
             </p>
