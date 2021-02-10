@@ -2,6 +2,7 @@
 
     <div class="layout">
 
+      <!-- TODO : problème de focus -->
       <div class="rf-skiplinks">
         <div class="rf-container">
           <ul class="rf-skiplinks__list">
@@ -41,6 +42,7 @@
 
                 <nav id="header-navigation" class="rf-nav" role="navigation" aria-label="Menu principal">
                    <ul class="rf-nav__list">
+                    <!-- TODO add rf-nav__item--active when needed -->
                       <li class="rf-nav__item">
                          <a class="rf-link" href="/" target="_self">Services</a>
                       </li>
