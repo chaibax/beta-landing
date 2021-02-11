@@ -9,14 +9,14 @@
 
                         <div class="rf-grid-row rf-grid-row--gutters">
                             <div class="rf-col">
-                                <h2>Pour les Startups d'État</h2>
+                                <h1>Pour les Startups d'État</h1>
                             </div>
                         </div>
 
                         <div class="rf-grid-row rf-grid-row--gutters">
 
                             <div class=" rf-col-12 rf-col-md-5">
-                                <img src="images/startups.svg" alt="Illustration d'une équipe au travail" />
+                                <img src="images/startups.svg" alt="" />
                                 <div class="rf-highlight">
                                     Nous accompagnons les Startups d'Etat dans leur recherche utilisateur, l'organisation d'entretiens ou de tests, la réalisation de prototypes ou le recrutement d'un designer.
                                 </div>
@@ -26,17 +26,17 @@
                                 <div class="kpis">
                                     <div class="kpi">
                                         <strong>35</strong>
-                                        <h3>Startups accompagnées par l'équipe transverse</h3>
+                                        <h2>Startups accompagnées par l'équipe transverse</h2>
                                         <p>Dans le cadre d'un atelier ou d'une mission</p>
                                     </div>
                                     <div class="kpi">
                                         <strong>59%</strong>
-                                        <h3>Startups accompagnées par un designer</h3>
+                                        <h2>Startups accompagnées par un designer</h2>
                                         <p>Depuis leur création jusqu'à aujourd'hui</p>
                                     </div>
                                     <div class="kpi">
                                           <strong>45%</strong>
-                                        <h3>De jeunes pousses accompagnées</h3>
+                                        <h2>De jeunes pousses accompagnées</h2>
                                         <p>Start-ups en phase d'investigation ou de construction</p>
                                     </div>
                                 </div>
@@ -58,14 +58,14 @@
 
                         <div class="rf-grid-row">
                             <div class="rf-col">
-                                <h2>Pour les Designers</h2>
+                                <h1>Pour les Designers</h1>
                             </div>
                         </div>
 
                         <div class="rf-grid-row rf-grid-row--gutters">
 
                             <div class="rf-col-12 rf-col-md-5">
-                                <img src="images/designers.svg" alt="Illustration d'un designer" />
+                                <img src="images/designers.svg" alt="" />
                                 <div class="rf-highlight">
                                     Nous accueillons les designers, leur fournissons des supports de travail et de communication,
                                     et diffusons des bonnes pratiques de conception pour les produits.
@@ -76,17 +76,17 @@
                                 <div class="kpis">
                                     <div class="kpi">
                                         <strong>26</strong>
-                                        <h3>Designers dans la communauté</h3>
+                                        <h2>Designers dans la communauté</h2>
                                         <p>Dans l'équipe transverse ou dans une SE</p>
                                     </div>
                                     <div class="kpi">
                                         <strong>35%</strong>
-                                        <h3>De designers engagés</h3>
+                                        <h2>De designers engagés</h2>
                                         <p>Présents à notre dernier séminaire</p>
                                     </div>
                                     <div class="kpi">
                                         <strong>121</strong>
-                                        <h3>Retours d'expérience partagés à la communauté</h3>
+                                        <h2>Retours d'expérience partagés à la communauté</h2>
                                         <p>Documents de travail, maquettes, retours <br> <a href="#">Voir les documents</a></p>
 
                                     </div>
@@ -103,14 +103,14 @@
 
                         <div class="rf-grid-row">
                             <div class="rf-col">
-                                <h2>Pour la communauté</h2>
+                                <h1>Pour la communauté</h1>
                             </div>
                         </div>
 
                         <div class="rf-grid-row rf-grid-row--gutters">
 
                             <div class="rf-col-12 rf-col-md-5">
-                                <img src="images/community.svg" alt="Illustration de plusieurs personnes au travail" />
+                                <img src="images/community.svg" alt="" />
                                 <div class="rf-highlight">
                                     Pour l'ensemble de la communauté, nous proposons des formations, des évènements liés au design
                                     et aux bonnes pratiques dans les Startups.
@@ -121,18 +121,18 @@
                                 <div class="kpis">
                                     <div class="kpi">
                                         <strong>{{allEvents}}</strong>
-                                       <h3>Évènements et rendez-vous liés au design</h3>
+                                       <h2>Évènements et rendez-vous liés au design</h2>
                                         <p>Dans le cadre d'un atelier ou d'une mission <br><a href="#">Les évènements à venir</a></p>
 
                                     </div>
                                     <div class="kpi">
                                         <strong>87</strong>
-                                        <h3>Participations à nos évènements</h3>
+                                        <h2>Participations à nos évènements</h2>
                                         <p>De l'ensemble de la communauté</p>
                                     </div>
                                     <div class="kpi">
                                         <strong>4.2<em> / 5</em></strong>
-                                        <h3>Satisfaction globale des usagers</h3>
+                                        <h2>Satisfaction globale des usagers</h2>
                                         <p>Lors de nos évènements</p>
                                     </div>
                                 </div>
@@ -167,6 +167,10 @@ import Layout from "~/layouts/Default.vue";
 
 
 export default {
+    metaInfo: {
+        title: 'Statistiques',
+    },
+
     components: {
         Layout,
     },
@@ -224,10 +228,10 @@ section:nth-child(2n):after {
 /* Colors */
 
 section.startups .rf-highlight {
-    border-left-color: #00AC8C;;
+    border-left-color: #008262;;
 }
 section.startups .kpi strong {
-    color: #00AC8C;
+    color: #008262;
 }
 
 section.designers .rf-highlight {
@@ -238,10 +242,10 @@ section.designers .kpi strong {
 }
 
 section.community .rf-highlight {
-    border-left-color: #FF6F4C;;
+    border-left-color: #f56542;
 }
 section.community .kpi strong {
-    color: #FF6F4C;
+    color: #f56542;
 }
 
 

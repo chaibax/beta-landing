@@ -4,7 +4,7 @@
         <div>
             <div class="rf-container">
 
-                <h2>Guides pratiques</h2>
+                <h1>Guides pratiques</h1>
                 <div class="rf-grid-row rf-grid-row--gutters">
 
                     <div class="rf-col-12 rf-col-md-4" v-for="(edge, index) in incomingEvents" :key="edge.node.id" >
@@ -12,7 +12,7 @@
                             <div class="rf-card__img" :style="{ 'background-image': 'url(' + edge.node.illustration[0].url + ')'}">
                             </div>
                             <div class="rf-card__body">
-                                <h4 class="rf-card__title">{{ edge.node.titre }}</h4>
+                                <h2 class="rf-card__title">{{ edge.node.titre }}</h2>
                                 <p class="rf-card__desc">{{ edge.node.description }}</p>
                             </div>
                          </a>
@@ -50,6 +50,10 @@ import moment from 'moment'
 const now = moment()
 
 export default {
+    metaInfo: {
+        title: 'Guides',
+    },
+
     components: {
         Layout,
         EventCard,

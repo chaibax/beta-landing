@@ -1,11 +1,30 @@
 <template>
 
     <div class="layout">
+
+      <!-- TODO : problème de focus -->
+      <div class="rf-skiplinks">
+        <div class="rf-container">
+          <ul class="rf-skiplinks__list">
+            <li>
+              <a class="rf-link" href="#content">Accéder au contenu</a>
+            </li>
+            <li>
+              <a class="rf-link" href="#header-navigation">Accéder au menu</a>
+            </li>
+            <li>
+              <a class="rf-link" href="#footer">Accéder au pied de page</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
         <header class="rf-header">
             <div class="rf-container">
                 <div class="rf-header__body">
                     <div class="rf-header__brand">
-                        <a class="rf-logo" href="#" title="République française">
+                        <a class="rf-logo" href="/" title="République française">
                             <span class="rf-logo__title">République
                             <br>
                              française</span>
@@ -13,7 +32,7 @@
                     </div>
                     <div class="rf-header__navbar">
                         <div class="rf-service">
-                            <a class="rf-service__title" href="#" title="Nom du service">
+                            <a class="rf-service__title" href="/" title="Nom du service">
                                 {{ $static.metadata.siteName }}
                             </a>
                             <p class="rf-service__tagline">beta.gouv.fr</p>
@@ -21,8 +40,9 @@
                     </div>
                 </div>
 
-                <nav class="rf-nav" role="navigation" aria-label="Menu principal">
+                <nav id="header-navigation" class="rf-nav" role="navigation" aria-label="Menu principal">
                    <ul class="rf-nav__list">
+                    <!-- TODO add rf-nav__item--active when needed -->
                       <li class="rf-nav__item">
                          <a class="rf-link" href="/" target="_self">Services</a>
                       </li>
@@ -40,7 +60,9 @@
             </div>
         </header>
 
-    <slot/>
+        <div id="content">
+          <slot/>
+        </div>
 
     <footer class="rf-footer" role="contentinfo" id="footer">
         <div class="rf-container">
@@ -66,7 +88,7 @@
             <div class="rf-footer__bottom">
                 <ul class="rf-footer__bottom-list">
                     <li class="rf-footer__bottom-item">
-                        <a class="rf-footer__bottom-link" href="#">Accessibilité: non/partiellement/totalement conforme</a>
+                        <a class="rf-footer__bottom-link" href="#">Accessibilité non conforme</a>
                     </li>
                 </ul>
                 <div class="rf-footer__bottom-copy">
