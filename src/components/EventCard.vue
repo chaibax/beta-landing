@@ -12,7 +12,8 @@
             </p>
 
             <div class="action" v-if="event.inscription">
-                <a v-if="event.inscription" :href="event.inscription" :title="edge.node.titre" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Réserver</a>
+                <!-- TODO : mettre la date dans le label aria -->
+                <a v-if="event.inscription" :href="event.inscription" aria-label="'Réserver (nouvelle fenêtre)'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Réserver</a>
             </div>
 
         </div>
