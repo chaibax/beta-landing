@@ -35,7 +35,7 @@
                             <a class="rf-service__title" href="/" title="Nom du service">
                                 {{ $static.metadata.siteName }}
                             </a>
-                            <p class="rf-service__tagline">beta.gouv.fr</p>
+                            <p class="rf-service__tagline">de l'incubateur beta.gouv.fr</p>
                         </div>
                     </div>
                 </div>
@@ -74,13 +74,15 @@
                     </a>
                 </div>
                 <div class="rf-footer__content">
-                    <p class="rf-footer__content-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="https://storyset.com/people">Illustrations de Freepik Storyset</a></p>
+                    <p class="rf-footer__content-desc">Les Designers Transverses sont des membres de la communauté <a href="https://beta.gouv.fr/">beta.gouv.fr</a>.</p>
+
+                    <p class="rf-footer__content-desc">Le <a href="https://github.com/betagouv/designers-transverses">code source</a> est disponible en licence libre. Illustrations de <a href="https://storyset.com/people"> Freepik Storyset</a>.</p>
                     <ul class="rf-footer__content-list">
                         <li>
                             <a class="rf-footer__content-link" href="https://beta.gouv.fr">beta.gouv.fr</a>
                         </li>
                         <li >
-                            <a class="rf-footer__content-link" href="https://doc.incubateur.net/design/">Documentation</a>
+                            <a class="rf-footer__content-link" href="https://doc.incubateur.net/design/">Documentation Design</a>
                         </li>
                     </ul>
                 </div>
