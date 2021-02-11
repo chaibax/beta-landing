@@ -11,8 +11,9 @@
                 <span class="rf-tg">{{ event.type.pour }}</span>
             </p>
 
-            <div class="action" >
-                <a v-if="event.inscription" :href="event.inscription" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Réserver</a>
+            <div class="action" v-if="event.inscription">
+                <!-- TODO : mettre la date dans le label aria -->
+                <a v-if="event.inscription" :href="event.inscription" aria-label="'Réserver (nouvelle fenêtre)'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Réserver</a>
             </div>
 
         </div>
