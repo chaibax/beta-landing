@@ -26,9 +26,9 @@
 
                 <div class="events">
                     <div class="event" v-for="(edge, index) in pastEvents" :key="edge.node.id">
-                        <div><p class="rf-tag">{{ edge.node.type.name }}</p></div>
+                        <p class="cell rf-tag">{{ edge.node.type.name }}</p>
                         <time :datetime="edge.node.debut">{{ edge.node.debut | formatDate }}</time>
-                        <div>
+                        <div class="cell">
                             <h2>{{ edge.node.titre || edge.node.type.name }}</h2>
                             <a v-if="edge.node.compteRendu" :title="edge.node.titre" :href="edge.node.compteRendu" target="_blank" class="rf-link">Voir le compte rendu<span class="rf-fi-external-link-line"></span></a>
                         </div>
@@ -116,7 +116,7 @@ export default {
         display: table-row;
     }
 
-    .event > div {
+    .event .cell {
         display: table-cell;
     }
 
@@ -130,6 +130,32 @@ export default {
     .rf-link .rf-fi-external-link-line {
         margin-left: .5em;
         color: var(--bf500);
+    }
+
+    @media(max-width: 768px) {
+        .events {
+            border-spacing: 0;
+        }
+        .event {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1em;
+            padding: 1em;
+            color: var(--g-800);
+            background-color: var(--g200);
+            border-radius: 1rem;
+        }
+        .event .rf-tag { padding: 0; }
+        .event time { 
+            font-size: 0.85em; 
+            color: #008262;
+            font-weight: 600; 
+        }
+        .event > div { padding: .5em 0; }
+        .event .rf-link { 
+            font-size: .9em;
+            padding: 0; 
+        }
     }
 
 
