@@ -77,13 +77,12 @@
                                     <div class="kpi">
                                         <strong>{{designers}}</strong>
                                         <h2>designers dans la communauté</h2>
-                                        <p>Designers ayant intégré une startup d'État ou l'équipe transverse.</p>
+                                        <p><a href="https://airtable.com/shrKVGcaSzzXxHI93/tblLXKFp5fHLE8PQ6" target="_blank">Tous les designers <span class="rf-fi-external-link-line"></span></a> ayant intégré une startup d'État ou l'équipe transverse.</p>
                                     </div>
                                     <div class="kpi">
-                                        <strong>35%</strong>
-                                        <h2>de designers engagés</h2>
-                                        <!-- TODO : lien vers les prochains séminaires -->
-                                        <p>Taux de présence lors du dernier <a href="#">Séminaire Designer <span class="rf-fi-external-link-line"></span></a>.</p>
+                                        <strong>{{welcomedDesigners}}</strong>
+                                        <h2>de designers accueillis</h2>
+                                        <p>Embarquement des nouveaux designers de la communauté <a href="https://airtable.com/shrynjHWqvRIfMhZB" target="_blank">On n'a pas encore discuté ? <span class="rf-fi-external-link-line"></span></a>.</p>
                                     </div>
                                     <div class="kpi">
                                         <strong>{{missions}}</strong>
@@ -127,7 +126,7 @@
 
                                     </div>
                                     <div class="kpi">
-                                        <strong>87</strong>
+                                        <strong>45</strong>
                                         <h2>participations à nos évènements</h2>
                                         <p>De l'ensemble de la communauté</p>
                                     </div>
@@ -167,6 +166,7 @@ query {
         edges {
             node {
                 id
+                embarquement
             }
         }
     }
@@ -237,6 +237,18 @@ export default {
 
         designers: function () {
             return this.$page.designers.edges.length;
+        },
+
+        welcomedDesigners: function () {
+            var total = this.$page.designers.edges
+                .filter(designer => ! ["J'ai quitté beta", "Non merci, j'ai déjà bien à faire", "Transverse"].includes(designer.node.embarquement))
+                .length
+
+            var welcomed = this.$page.designers.edges
+                .filter(designer => ["On s'est déjà rencontrés"].includes(designer.node.embarquement))
+                .length
+
+            return Math.round(welcomed / total * 100) + "%"
         },
 
 
