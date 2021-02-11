@@ -67,15 +67,15 @@
                                 <div class="kpis">
                                     <div class="kpi">
                                         <h2><strong>{{designers}}</strong> designers dans la communauté</h2>
-                                        <p><a href="https://airtable.com/shrKVGcaSzzXxHI93/tblLXKFp5fHLE8PQ6" target="_blank">Tous les designers <span class="rf-fi-external-link-line"></span></a> ayant intégré une startup d'État ou l'équipe transverse.</p>
+                                        <p><a href="https://airtable.com/shrKVGcaSzzXxHI93/tblLXKFp5fHLE8PQ6" target="_blank">Tous les designers <span class="rf-fi-external-link-line" aria-label="nouvelle fenêtre"></span></a> ayant intégré une startup d'État ou l'équipe transverse.</p>
                                     </div>
                                     <div class="kpi">
                                         <h2><strong>{{welcomedDesigners}}</strong> de designers accueillis</h2>
-                                        <p>Embarquement des nouveaux designers de la communauté.<br /><a href="https://airtable.com/shrynjHWqvRIfMhZB" target="_blank">On ne t'a pas accueilli ? <span class="rf-fi-external-link-line"></span></a></p>
+                                        <p>Embarquement des nouveaux designers de la communauté.<br /><a href="https://airtable.com/shrynjHWqvRIfMhZB" target="_blank">On ne t'a pas accueilli ? <span class="rf-fi-external-link-line" aria-label="nouvelle fenêtre"></span></a></p>
                                     </div>
                                     <div class="kpi">
                                         <h2><strong>{{missions}}</strong> retours d'expérience</h2>
-                                        <p>Documents de travail, maquettes, restitution d'ateliers <a href="#">partagés à la communauté <span class="rf-fi-external-link-line"></span></a>.</p>
+                                        <p>Documents de travail, maquettes, restitution d'ateliers <a href="#">partagés à la communauté <span class="rf-fi-external-link-line" aria-label="nouvelle fenêtre"></span></a>.</p>
                                     </div>
                                 </div>
                             </div>
