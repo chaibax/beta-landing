@@ -6,8 +6,7 @@
         {{ $page.event.name }}
       </span>
     </h1>
-    <!-- <span class="date">{{formattedDate}}</span> -->
-    <time class="date--fun">{{ formattedDate }}</time>
+    <time class="date--fun" :datetime="edge.node.debut">{{ formattedDate }}</time>
     <section>
       <h2>
         <span class="underline--blue">

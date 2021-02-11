@@ -15,8 +15,7 @@
                 <div class="events">
                     <div class="event" v-for="(edge, index) in pastEvents" :key="edge.node.id">
                         <div><p class="rf-tag">{{ edge.node.type.name }}</p></div>
-                        <!-- TODO add datetime attribute: datetime="edge.node.debut" -->
-                        <time>{{ edge.node.debut | formatDate }}</time>
+                        <time :datetime="edge.node.debut">{{ edge.node.debut | formatDate }}</time>
                         <div>
                             <h2 class="rf-h4">{{ edge.node.titre || edge.node.type.name }}</h2>
                             <a v-if="edge.node.compteRendu" :title="edge.node.titre" :href="edge.node.compteRendu" class="rf-link">Voir le compte rendu</a>
