@@ -71,14 +71,13 @@
 
                             <div class="rf-col-12 rf-col-md-7">
                                 <div class="kpis">
-                                    <div class="kpi">          
+                                    <div class="kpi">
                                         <h2><strong>{{designers}}</strong> designers dans la communauté</h2>
-                                        <p>Designers ayant intégré une startup d'État ou l'équipe transverse.</p>
+                                        <p><a href="https://airtable.com/shrKVGcaSzzXxHI93/tblLXKFp5fHLE8PQ6" target="_blank">Tous les designers <span class="rf-fi-external-link-line"></span></a> ayant intégré une startup d'État ou l'équipe transverse.</p>
                                     </div>
                                     <div class="kpi">
-                                        <h2><strong>35%</strong> de designers engagés</h2>
-                                        <!-- TODO : lien vers les prochains séminaires -->
-                                        <p>Taux de présence lors du dernier <a href="#">Séminaire Designer <span class="rf-fi-external-link-line"></span></a>.</p>
+                                        <h2><strong>{{welcomedDesigners}}</strong> de designers accueillis</h2>
+                                        <p>Embarquement des nouveaux designers de la communauté <a href="https://airtable.com/shrynjHWqvRIfMhZB" target="_blank">On n'a pas encore discuté ? <span class="rf-fi-external-link-line"></span></a>.</p>
                                     </div>
                                     <div class="kpi">
                                         <h2><strong>{{missions}}</strong> retours d'expérience</h2>
@@ -119,7 +118,7 @@
 
                                     </div>
                                     <div class="kpi">
-                                        <h2><strong>87</strong> participations à nos évènements</h2>
+                                        <h2><strong>45</strong> participations à nos évènements</h2>
                                         <p>De l'ensemble de la communauté</p>
                                     </div>
                                     <div class="kpi">
@@ -157,6 +156,7 @@ query {
         edges {
             node {
                 id
+                embarquement
             }
         }
     }
@@ -227,6 +227,18 @@ export default {
 
         designers: function () {
             return this.$page.designers.edges.length;
+        },
+
+        welcomedDesigners: function () {
+            var total = this.$page.designers.edges
+                .filter(designer => ! ["J'ai quitté beta", "Non merci, j'ai déjà bien à faire", "Transverse"].includes(designer.node.embarquement))
+                .length
+
+            var welcomed = this.$page.designers.edges
+                .filter(designer => ["On s'est déjà rencontrés"].includes(designer.node.embarquement))
+                .length
+
+            return Math.round(welcomed / total * 100) + "%"
         },
 
 
