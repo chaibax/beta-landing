@@ -75,7 +75,7 @@
                                     </div>
                                     <div class="kpi">
                                         <h2><strong>{{missions}}</strong> retours d'expérience</h2>
-                                        <p>Documents de travail, maquettes, restitution d'ateliers <a href="#">partagés à la communauté <span class="rf-fi-external-link-line" aria-label="nouvelle fenêtre"></span></a>.</p>
+                                        <p><a href="#">Documents partagés à la communauté <span class="rf-fi-external-link-line" aria-label="nouvelle fenêtre"></span></a>de travail, maquettes, restitution d'ateliers.</p>
                                     </div>
                                 </div>
                             </div>
