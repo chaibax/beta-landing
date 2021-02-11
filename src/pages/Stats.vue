@@ -39,12 +39,6 @@
                                 </div>
 
                             </div>
-
-                            <!--
-                            <div class="rf-col-5">
-                                <canvas id="myChart" height="100"></canvas>
-                            </div>
-                        -->
                         </div>
                     </div>
                 </section>
