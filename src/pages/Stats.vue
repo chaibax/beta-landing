@@ -108,7 +108,7 @@
                                 <div class="kpis">
                                     <div class="kpi">
                                        <h2><strong>{{allEvents}}</strong> évènements et rendez-vous liés au design</h2>
-                                        <p>Dans le cadre d'un atelier ou d'une mission <br><a href="#">Les évènements à venir</a></p>
+                                        <p>Dans le cadre d'un atelier ou d'une mission <br><a href="/events">Les évènements à venir</a></p>
 
                                     </div>
                                     <div class="kpi">
