@@ -39,7 +39,7 @@ export default {
 
     filters: {
         formatDateTime: function(value) {
-            moment.locale('fr', {
+            moment.updateLocale('fr', {
                 calendar: {
                     sameElse : 'ddd Do MMMM à HH[h]mm'
                 }

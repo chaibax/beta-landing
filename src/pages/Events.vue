@@ -58,7 +58,7 @@ import Layout from "~/layouts/Default.vue";
 import EventCard from "~/components/EventCard.vue";
 import moment from 'moment'
 
-const now = moment()
+moment.updateLocale('fr', {})
 
 export default {
     components: {
@@ -82,7 +82,6 @@ export default {
 
     filters: {
         formatDate: function(value) {
-            moment.locale('fr')
             return moment(value).format("LL");
         },
     }
