@@ -12,7 +12,7 @@
               <div class="rf-header__navbar">
                   <div class="rf-service">
                       <a class="rf-service__title" href="/" title="Nom du service">
-                          {{ name }}
+                          {{ service_name }}
                       </a>
                       <p class="rf-service__tagline">de l'incubateur beta.gouv.fr</p>
                   </div>
@@ -40,14 +40,60 @@
   </header>
 </template>
 
-
 <script>
 export default {
     name: "Header",
 
     props: {
-        name: Object,
+      service_name: {
+        type: String,
+        required: true,
+      },
     },
 
-};
+    mounted () {
+      //Highlight active link in menu and set aria-current
+      var currentUrl = this.$route.path;
+      var activeClass = 'active';
+      var navLinks = document.querySelectorAll('.rf-nav a'); //all links inside the nav
+      for (var i = 0, l = navLinks.length; i < l; i++) {
+        const link = navLinks[i];
+        const url = link.getAttribute('href');
+        const span = document.createElement('span');
+        if (url == "/") {
+          if (currentUrl == url) {
+            span.innerHTML = link.innerHTML;
+            span.classList.add('rf-link');
+            span.classList.add(activeClass);
+            link.parentNode.setAttribute("aria-current", "page");
+            link.parentNode.replaceChild(span, link);
+          }
+        }
+        else if (currentUrl == url) {
+          span.innerHTML = link.innerHTML;
+          span.classList.add('rf-link');
+          span.classList.add(activeClass);
+          link.parentNode.setAttribute("aria-current", "page");
+          link.parentNode.replaceChild(span, link);
+        }
+        else if (currentUrl.includes(url)) {
+          span.innerHTML = link.innerHTML;
+          span.classList.add('rf-link');
+          span.classList.add(activeClass);
+          link.parentNode.setAttribute("aria-current", "true");
+          link.parentNode.replaceChild(span, link);
+        }
+      }
+    }
+  }
+
 </script>
+
+<style lang="scss">
+      .rf-link {
+        &.active {
+          color: var(--bf500);
+          box-shadow: inset 0 -2px var(--bf500);
+        }
+      }
+</style>

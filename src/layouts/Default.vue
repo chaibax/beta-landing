@@ -20,7 +20,7 @@
       </div>
 
 
-      <Header :name="$static.metadata.siteName" />
+      <Header :service_name="$static.metadata.siteName" />
 
         <div id="content">
           <slot/>
