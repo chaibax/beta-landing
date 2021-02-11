@@ -122,18 +122,18 @@
                                 <div class="kpis">
                                     <div class="kpi">
                                         <strong>{{allEvents}}</strong>
-                                       <h3>Évènements et rendez-vous liés au design</h3>
+                                       <h3>évènements et rendez-vous liés au design</h3>
                                         <p>Dans le cadre d'un atelier ou d'une mission <br><a href="#">Les évènements à venir</a></p>
 
                                     </div>
                                     <div class="kpi">
                                         <strong>87</strong>
-                                        <h3>Participations à nos évènements</h3>
+                                        <h3>participations à nos évènements</h3>
                                         <p>De l'ensemble de la communauté</p>
                                     </div>
                                     <div class="kpi">
                                         <strong>4.2<em> / 5</em></strong>
-                                        <h3>Satisfaction globale des usagers</h3>
+                                        <h3>satisfaction globale des usagers</h3>
                                         <p>Lors de nos évènements</p>
                                     </div>
                                 </div>
