@@ -17,8 +17,8 @@
                         <div><p class="rf-tag">{{ edge.node.type.name }}</p></div>
                         <time :datetime="edge.node.debut">{{ edge.node.debut | formatDate }}</time>
                         <div>
-                            <h2 class="rf-h4">{{ edge.node.titre || edge.node.type.name }}</h2>
-                            <a v-if="edge.node.compteRendu" :title="edge.node.titre" :href="edge.node.compteRendu" class="rf-link">Voir le compte rendu<span class="rf-fi-external-link-line"></span></a>
+                            <h2>{{ edge.node.titre || edge.node.type.name }}</h2>
+                            <a v-if="edge.node.compteRendu" :title="edge.node.titre" :href="edge.node.compteRendu" target="_blank" class="rf-link">Voir le compte rendu<span class="rf-fi-external-link-line"></span></a>
                         </div>
                     </div>
                  </div>
@@ -112,6 +112,7 @@ export default {
         display: inline-block;
         margin: 0;
         margin-right: 1em;
+        font-size: 1.1rem;
     }
 
     .rf-link .rf-fi-external-link-line {
