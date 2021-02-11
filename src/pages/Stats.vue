@@ -25,18 +25,15 @@
                             <div class=" rf-col-12 rf-col-md-7">
                                 <div class="kpis">
                                     <div class="kpi">
-                                        <strong>{{accompaniedStartup}}</strong>
-                                        <h2>équipes accompagnées par les designers transverses</h2>
+                                        <h2><strong>{{accompaniedStartup}}</strong> équipes accompagnées par les designers transverses</h2>
                                         <p>Startups d'État ayant bénéficié d'un atelier ou d'une mission courte.</p>
                                     </div>
                                     <div class="kpi">
-                                        <strong>{{startupsWithDesignerPercent}}</strong>
-                                        <h2>d'équipes accompagnées par un·e designer</h2>
+                                        <h2><strong>{{startupsWithDesignerPercent}}</strong> équipes accompagnées par un·e designer</h2>
                                         <p>Startups d'État ayant accueilli un·e designer à temps plein ou ponctuellement.</p>
                                     </div>
                                     <div class="kpi">
-                                          <strong>{{accompaniedYouth}}</strong>
-                                        <h2>de jeunes pousses accompagnées</h2>
+                                        <h2><strong>{{accompaniedYouth}}</strong> de jeunes pousses accompagnées</h2>
                                         <p>Start-ups d'État en phase d'investigation ou de construction suivies par l'équipe transverse.</p>
                                     </div>
                                 </div>
@@ -75,20 +72,16 @@
                             <div class="rf-col-12 rf-col-md-7">
                                 <div class="kpis">
                                     <div class="kpi">
-                                        <strong>{{designers}}</strong>
-                                        <h2>designers dans la communauté</h2>
+                                        <h2><strong>{{designers}}</strong> designers dans la communauté</h2>
                                         <p><a href="https://airtable.com/shrKVGcaSzzXxHI93/tblLXKFp5fHLE8PQ6" target="_blank">Tous les designers <span class="rf-fi-external-link-line"></span></a> ayant intégré une startup d'État ou l'équipe transverse.</p>
                                     </div>
                                     <div class="kpi">
-                                        <strong>{{welcomedDesigners}}</strong>
-                                        <h2>de designers accueillis</h2>
+                                        <h2><strong>{{welcomedDesigners}}</strong> de designers accueillis</h2>
                                         <p>Embarquement des nouveaux designers de la communauté <a href="https://airtable.com/shrynjHWqvRIfMhZB" target="_blank">On n'a pas encore discuté ? <span class="rf-fi-external-link-line"></span></a>.</p>
                                     </div>
                                     <div class="kpi">
-                                        <strong>{{missions}}</strong>
-                                        <h2>retours d'expérience</h2>
-                                        <p>Documents de travail, maquettes, restitution d'ateliers <a href="https://airtable.com/shrp9MMfYaHnANp2x/tbl5WkhrShT2DKbOx" target="_blank">partagés à la communauté <span class="rf-fi-external-link-line"></span></a>.</p>
-
+                                        <h2><strong>{{missions}}</strong> retours d'expérience</h2>
+                                        <p>Documents de travail, maquettes, restitution d'ateliers <a href="#">partagés à la communauté <span class="rf-fi-external-link-line"></span></a>.</p>
                                     </div>
                                 </div>
                             </div>
@@ -120,19 +113,16 @@
                             <div class="rf-col-12 rf-col-md-7">
                                 <div class="kpis">
                                     <div class="kpi">
-                                        <strong>{{allEvents}}</strong>
-                                       <h2>évènements et rendez-vous liés au design</h2>
+                                       <h2><strong>{{allEvents}}</strong> évènements et rendez-vous liés au design</h2>
                                         <p>Dans le cadre d'un atelier ou d'une mission <br><a href="#">Les évènements à venir</a></p>
 
                                     </div>
                                     <div class="kpi">
-                                        <strong>45</strong>
-                                        <h2>participations à nos évènements</h2>
+                                        <h2><strong>45</strong> participations à nos évènements</h2>
                                         <p>De l'ensemble de la communauté</p>
                                     </div>
                                     <div class="kpi">
-                                        <strong>4.2<em> / 5</em></strong>
-                                        <h2>satisfaction globale des usagers</h2>
+                                        <h2><strong>4.2<em> / 5</em></strong> satisfaction globale des usagers</h2>
                                         <p>Lors de nos évènements</p>
                                     </div>
                                 </div>
@@ -356,11 +346,11 @@ section.community .kpi strong {
     margin: 0;
 }
 
-.kpi strong {
+.kpi h2 strong {
     font-size: 3.5rem;
     font-weight: 600;
     /*color: #000091;*/
-
+    display: block;
     line-height: 1.2;
 }
 
