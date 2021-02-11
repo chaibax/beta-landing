@@ -3,11 +3,11 @@
       <div class="rf-container">
           <div class="rf-header__body">
               <div class="rf-header__brand">
-                  <a class="rf-logo" href="/" title="République française">
+                  <span class="rf-logo">
                       <span class="rf-logo__title">République
                       <br>
                        française</span>
-                  </a>
+                  </span>
               </div>
               <div class="rf-header__navbar">
                   <div class="rf-service">
