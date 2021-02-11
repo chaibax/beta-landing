@@ -71,7 +71,7 @@
                                     </div>
                                     <div class="kpi">
                                         <h2><strong>{{welcomedDesigners}}</strong> de designers accueillis</h2>
-                                        <p>Embarquement des nouveaux designers de la communauté <a href="https://airtable.com/shrynjHWqvRIfMhZB" target="_blank">On n'a pas encore discuté ? <span class="rf-fi-external-link-line"></span></a>.</p>
+                                        <p>Embarquement des nouveaux designers de la communauté.<br /><a href="https://airtable.com/shrynjHWqvRIfMhZB" target="_blank">On ne t'a pas accueilli ? <span class="rf-fi-external-link-line"></span></a></p>
                                     </div>
                                     <div class="kpi">
                                         <h2><strong>{{missions}}</strong> retours d'expérience</h2>
@@ -107,17 +107,19 @@
                             <div class="rf-col-12 rf-col-md-7">
                                 <div class="kpis">
                                     <div class="kpi">
-                                       <h2><strong>{{allEvents}}</strong> évènements et rendez-vous liés au design</h2>
-                                        <p>Dans le cadre d'un atelier ou d'une mission <br><a href="/events">Les évènements à venir</a></p>
+                                        <h2><strong>{{allEvents}}</strong> évènements et rendez-vous liés au design</h2>
+                                        <p>Ateliers, retours d'expériences ou formations organisés par l'équipe.<br>
+                                            <a href="/events">Voir les évènements à venir</a></p>
 
                                     </div>
                                     <div class="kpi">
                                         <h2><strong>45</strong> participations à nos évènements</h2>
-                                        <p>De l'ensemble de la communauté</p>
+                                        <p>Membres de la communauté ayant participé ou assisté à nos rendez-vous, designers, ou pas !
+                                        </p>
                                     </div>
                                     <div class="kpi">
                                         <h2><strong>4.2<em> / 5</em></strong> satisfaction globale des usagers</h2>
-                                        <p>Lors de nos évènements</p>
+                                        <p>Évaluation du « retour sur temps investi » (ROTI), à la fin de nos évènements.</p>
                                     </div>
                                 </div>
                             </div>
