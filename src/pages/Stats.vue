@@ -25,18 +25,15 @@
                             <div class=" rf-col-12 rf-col-md-7">
                                 <div class="kpis">
                                     <div class="kpi">
-                                        <strong>35</strong>
-                                        <h2>équipes accompagnées par les designers transverses</h2>
+                                        <h2><strong>35</strong> équipes accompagnées par les designers transverses</h2>
                                         <p>Startups d'État ayant bénéficié d'un atelier ou d'une mission courte.</p>
                                     </div>
                                     <div class="kpi">
-                                        <strong>59%</strong>
-                                        <h2>équipes accompagnées par un·e designer</h2>
+                                        <h2><strong>59%</strong> équipes accompagnées par un·e designer</h2>
                                         <p>Startups d'État ayant accueilli un·e designer à temps plein ou ponctuellement.</p>
                                     </div>
                                     <div class="kpi">
-                                          <strong>45%</strong>
-                                        <h2>de jeunes pousses accompagnées</h2>
+                                        <h2><strong>45%</strong> de jeunes pousses accompagnées</h2>
                                         <p>Start-ups d'État en phase d'investigation ou de construction suivies par l'équipe transverse.</p>
                                     </div>
                                 </div>
@@ -75,21 +72,17 @@
                             <div class="rf-col-12 rf-col-md-7">
                                 <div class="kpis">
                                     <div class="kpi">
-                                        <strong>26</strong>
-                                        <h2>designers dans la communauté</h2>
+                                        <h2><strong>26</strong> designers dans la communauté</h2>
                                         <p>Designers ayant intégré une startup d'État ou l'équipe transverse.</p>
                                     </div>
                                     <div class="kpi">
-                                        <strong>35%</strong>
-                                        <h2>de designers engagés</h2>
+                                        <h2><strong>35%</strong> de designers engagés</h2>
                                         <!-- TODO : lien vers les prochains séminaires -->
                                         <p>Taux de présence lors du dernier <a href="#">Séminaire Designer <span class="rf-fi-external-link-line"></span></a>.</p>
                                     </div>
                                     <div class="kpi">
-                                        <strong>121</strong>
-                                        <h2>retours d'expérience</h2>
+                                        <h2><strong>121</strong> retours d'expérience</h2>
                                         <p>Documents de travail, maquettes, restitution d'ateliers <a href="#">partagés à la communauté <span class="rf-fi-external-link-line"></span></a>.</p>
-
                                     </div>
                                 </div>
                             </div>
@@ -121,19 +114,16 @@
                             <div class="rf-col-12 rf-col-md-7">
                                 <div class="kpis">
                                     <div class="kpi">
-                                        <strong>{{allEvents}}</strong>
-                                       <h2>évènements et rendez-vous liés au design</h2>
+                                       <h2><strong>{{allEvents}}</strong> évènements et rendez-vous liés au design</h2>
                                         <p>Dans le cadre d'un atelier ou d'une mission <br><a href="#">Les évènements à venir</a></p>
 
                                     </div>
                                     <div class="kpi">
-                                        <strong>87</strong>
-                                        <h2>participations à nos évènements</h2>
+                                        <h2><strong>87</strong> participations à nos évènements</h2>
                                         <p>De l'ensemble de la communauté</p>
                                     </div>
                                     <div class="kpi">
-                                        <strong>4.2<em> / 5</em></strong>
-                                        <h2>satisfaction globale des usagers</h2>
+                                        <h2><strong>4.2<em> / 5</em></strong> satisfaction globale des usagers</h2>
                                         <p>Lors de nos évènements</p>
                                     </div>
                                 </div>
@@ -273,18 +263,18 @@ section.community .kpi strong {
   max-width: 50%;
 }
 
-.kpi h3 {
+.kpi h2 {
     font-size: 1rem;
     line-height: 1.4;
     font-weight: bold;
     margin: 0;
 }
 
-.kpi strong {
+.kpi h2 strong {
     font-size: 3.5rem;
     font-weight: 600;
     /*color: #000091;*/
-
+    display: block;
     line-height: 1.2;
 }
 
