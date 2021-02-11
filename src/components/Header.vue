@@ -11,7 +11,7 @@
               </div>
               <div class="rf-header__navbar">
                   <div class="rf-service">
-                      <a class="rf-service__title" href="/" title="Nom du service">
+                      <a class="rf-service__title" href="/">
                           {{ service_name }}
                       </a>
                       <p class="rf-service__tagline">de l'incubateur beta.gouv.fr</p>
