@@ -33,8 +33,7 @@
 				  		<li>Certains documents sont hébergés sur Google Drive. Nous ne garantissons par leur accessibilité, mais essayons de fournir un support texte à toutes nos formations et interventions.</li>
 				  	</ul>
 
-				  	<a class="rf-btn rf-btn--sm" href="">Lire la déclaration d'accessibilité</a>
-
+				  	<p><a class="rf-btn rf-btn--sm" href="/statement">Lire la déclaration d'accessibilité</a></p>
 				</div>
 			</div>
 		</div>
