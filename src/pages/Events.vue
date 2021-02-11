@@ -4,14 +4,26 @@
         <div>
             <div class="rf-container">
 
-                <h1>Évènements à venir</h1>
+                <div class="rf-grid-row rf-grid-row--gutters">
+                    <div class="rf-col">
+                        <h1>Évènements à venir</h1>
+                    </div>
+                </div>
+
                 <div class="rf-grid-row rf-grid-row--gutters">
                     <div class="rf-col-12 rf-col-md-3" v-for="(edge, index) in incomingEvents" :key="edge.node.id" >
                         <EventCard :event="edge.node" />
                     </div>
                 </div>
 
-                <h1>Évènements passés</h1>
+
+                <div class="rf-grid-row rf-grid-row--gutters">
+                    <div class="rf-col">
+                        <h1>Évènements passés</h1>
+                    </div>
+                </div>
+
+
                 <div class="events">
                     <div class="event" v-for="(edge, index) in pastEvents" :key="edge.node.id">
                         <div><p class="rf-tag">{{ edge.node.type.name }}</p></div>

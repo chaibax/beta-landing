@@ -119,6 +119,10 @@ body {
     background: #FCFCFC;
 }
 
+h1 {
+    font-size: 2.2em;
+}
+
 .rf-service__title {
     font-weight: 700;
     font-size: 1.4rem;
@@ -139,11 +143,5 @@ body {
 }
 
 
-
-
-h2 {
-    font-size: 2.2em;
-    text-align: left;
-}
 
 </style>

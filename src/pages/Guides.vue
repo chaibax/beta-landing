@@ -3,8 +3,12 @@
     <Layout>
         <div>
             <div class="rf-container">
+                <div class="rf-grid-row rf-grid-row--gutters">
+                    <div class="rf-col">
+                        <h1>Guides pratiques</h1>
+                    </div>
+                </div>
 
-                <h1>Guides pratiques</h1>
                 <div class="rf-grid-row rf-grid-row--gutters">
 
                     <div class="rf-col-12 rf-col-md-4" v-for="(edge, index) in incomingEvents" :key="edge.node.id" >
