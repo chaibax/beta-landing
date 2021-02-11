@@ -30,7 +30,7 @@
                         <time :datetime="edge.node.debut">{{ edge.node.debut | formatDate }}</time>
                         <div class="cell">
                             <h2>{{ edge.node.titre || edge.node.type.name }}</h2>
-                            <a v-if="edge.node.compteRendu" :aria-label="edge.node.titre" :href="edge.node.compteRendu" target="_blank" class="rf-link">Voir le compte rendu<span class="rf-fi-external-link-line" aria-label="nouvelle fenêtre"></span></a>
+                            <a v-if="edge.node.compteRendu" :aria-label="'Compte rendu de ' + edge.node.titre" :href="edge.node.compteRendu" target="_blank" class="rf-link">Voir le compte rendu<span class="rf-fi-external-link-line" aria-label="nouvelle fenêtre"></span></a>
                         </div>
                     </div>
                  </div>
