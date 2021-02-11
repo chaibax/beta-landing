@@ -30,10 +30,10 @@
         <div class="rf-container">
             <div class="rf-footer__body">
                 <div class="rf-footer__brand">
-                    <a class="rf-logo" href="#" title="république française">
+                    <span class="rf-logo">
                         <span class="rf-logo__title">république
                             <br>française</span>
-                    </a>
+                    </span>
                 </div>
                 <div class="rf-footer__content">
                     <p class="rf-footer__content-desc">Les Designers Transverses sont des membres de la communauté <a href="https://beta.gouv.fr/">beta.gouv.fr</a>.</p>
