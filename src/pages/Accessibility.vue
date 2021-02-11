@@ -24,7 +24,7 @@
 
 				  	<p>Nous avons également rendu le texte du site aussi simple que possible à comprendre.</p>
 
-				  	<h2>Défaults d'accessibilité</h2>
+				  	<h2>Défauts d'accessibilité</h2>
 
 				  	<p>Nous savons que certaines parties de ce site ne sont pas entièrement accessibles :</p>
 
@@ -41,3 +41,17 @@
 	</div>
   </Layout>
 </template>
+
+<script>
+import Layout from "~/layouts/Default.vue";
+
+export default {
+    metaInfo: {
+        title: "Accessibilité",
+    },
+
+    components: {
+        Layout,
+    },
+}
+</script>
