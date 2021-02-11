@@ -25,15 +25,15 @@
                             <div class=" rf-col-12 rf-col-md-7">
                                 <div class="kpis">
                                     <div class="kpi">
-                                        <h2><strong>35</strong> équipes accompagnées par les designers transverses</h2>
+                                        <h2><strong>{{accompaniedStartup}}</strong> équipes accompagnées par les designers transverses</h2>
                                         <p>Startups d'État ayant bénéficié d'un atelier ou d'une mission courte.</p>
                                     </div>
                                     <div class="kpi">
-                                        <h2><strong>59%</strong> équipes accompagnées par un·e designer</h2>
+                                        <h2><strong>{{startupsWithDesignerPercent}}</strong> équipes accompagnées par un·e designer</h2>
                                         <p>Startups d'État ayant accueilli un·e designer à temps plein ou ponctuellement.</p>
                                     </div>
                                     <div class="kpi">
-                                        <h2><strong>45%</strong> de jeunes pousses accompagnées</h2>
+                                        <h2><strong>{{accompaniedYouth}}</strong> de jeunes pousses accompagnées</h2>
                                         <p>Start-ups d'État en phase d'investigation ou de construction suivies par l'équipe transverse.</p>
                                     </div>
                                 </div>
@@ -71,8 +71,8 @@
 
                             <div class="rf-col-12 rf-col-md-7">
                                 <div class="kpis">
-                                    <div class="kpi">
-                                        <h2><strong>26</strong> designers dans la communauté</h2>
+                                    <div class="kpi">          
+                                        <h2><strong>{{designers}}</strong> designers dans la communauté</h2>
                                         <p>Designers ayant intégré une startup d'État ou l'équipe transverse.</p>
                                     </div>
                                     <div class="kpi">
@@ -81,7 +81,7 @@
                                         <p>Taux de présence lors du dernier <a href="#">Séminaire Designer <span class="rf-fi-external-link-line"></span></a>.</p>
                                     </div>
                                     <div class="kpi">
-                                        <h2><strong>121</strong> retours d'expérience</h2>
+                                        <h2><strong>{{missions}}</strong> retours d'expérience</h2>
                                         <p>Documents de travail, maquettes, restitution d'ateliers <a href="#">partagés à la communauté <span class="rf-fi-external-link-line"></span></a>.</p>
                                     </div>
                                 </div>
@@ -141,6 +141,36 @@
 
 <page-query>
 query {
+
+    startups: allStartup {
+        edges {
+            node {
+                nom
+                statut
+                designers
+                phase
+            }
+        }
+    }
+
+    designers: allDesigner {
+        edges {
+            node {
+                id
+            }
+        }
+    }
+
+    missions: allMission {
+        edges {
+            node {
+                id
+                statut
+            }
+        }
+    }
+
+
     events: allEvent {
         edges {
             node {
@@ -148,14 +178,13 @@ query {
             }
         }
     }
+
 }
 </page-query>
 
 
-
 <script>
 import Layout from "~/layouts/Default.vue";
-
 
 export default {
     metaInfo: {
@@ -168,6 +197,43 @@ export default {
     computed: {
         allEvents: function () {
             return  this.$page.events.edges.length;
+        },
+
+        accompaniedStartup: function () {
+            return this.$page.startups.edges
+                .filter(event => ["Accompagné", "En cours"].includes(event.node.statut) )
+                .length
+        },
+
+        startupsWithDesignerPercent: function () {
+            var total = this.$page.startups.edges.length
+            var startupsWithDesigner = this.$page.startups.edges
+                .filter(designer =>  designer.node.designers.length > 0 )
+                .length
+
+            return Math.round(startupsWithDesigner / total * 100) + "%"
+        },
+
+        accompaniedYouth: function () {
+            var total = this.$page.startups.edges.length
+
+            var startupsWithDesigner = this.$page.startups.edges
+                .filter(designer => ["Accompagné", "En cours"].includes(designer.node.statut) )
+                .filter(designer => ["investigation", "construction"].includes(designer.node.phase) )
+                .length
+
+            return Math.round(startupsWithDesigner / total * 100) + "%"
+        },
+
+        designers: function () {
+            return this.$page.designers.edges.length;
+        },
+
+
+        missions: function () {
+            return this.$page.missions.edges
+                .filter(mission => ["Terminé"].includes(mission.node.statut) )
+                .length;
         },
     }
 };
@@ -238,8 +304,6 @@ section.community .rf-highlight {
 section.community .kpi strong {
     color: #f56542;
 }
-
-
 
 
 .kpis {

@@ -8,6 +8,7 @@ module.exports = {
     siteName: 'Designers Transverses',
 
     plugins: [
+
         // Évènements
         {
           use: '@gridsome/source-airtable',
@@ -34,6 +35,30 @@ module.exports = {
             ],
           },
         },
+
+         // Designers et start-ups
+        {
+          use: '@gridsome/source-airtable',
+          options: {
+            apiKey: 'keybQLCgbSWWJqps8',
+            base: 'appt60lhtZtqGytRF',
+            tables: [
+                {
+                    name: "Startups d'État", // required
+                    typeName: 'Startup', // required
+                },
+                {
+                    name: "Designers", // required
+                    typeName: 'Designer', // required
+                },
+                {
+                    name: "Missions", // required
+                    typeName: 'Mission', // required
+                }
+            ],
+          },
+        },
+
 
         // Guides
         {
