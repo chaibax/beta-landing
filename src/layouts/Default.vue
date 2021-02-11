@@ -52,7 +52,7 @@
             <div class="rf-footer__bottom">
                 <ul class="rf-footer__bottom-list">
                     <li class="rf-footer__bottom-item">
-                        <a class="rf-footer__bottom-link" href="#">Accessibilité non conforme</a>
+                        <a class="rf-footer__bottom-link" href="/accessibility">Accessibilité non conforme</a>
                     </li>
                 </ul>
                 <div class="rf-footer__bottom-copy">
