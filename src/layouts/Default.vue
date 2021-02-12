@@ -83,7 +83,7 @@ export default {
     },
 
     mounted () {
-      let src = "/js/all.min.js"
+      let src = "/js/header.min.js"
       let dsfr = document.createElement('script');
       dsfr.type = "text/javascript";
       dsfr.src = src;
