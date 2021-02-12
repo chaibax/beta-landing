@@ -81,6 +81,18 @@ export default {
     components: {
         Header,
     },
+
+    mounted () {
+      let src = "/js/header.min.js"
+      let dsfr = document.createElement('script');
+      dsfr.type = "text/javascript";
+      dsfr.src = src;
+      let scripts = document.querySelectorAll('[src="' + src + '"]');
+      if (scripts.length > 0) {
+        scripts[0].remove();
+      }
+      document.body.appendChild(dsfr);
+    }
 };
 
 </script>
