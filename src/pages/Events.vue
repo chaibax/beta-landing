@@ -23,11 +23,10 @@
                     </div>
                 </div>
 
-
                 <div class="events">
                     <div class="event" v-for="(edge, index) in pastEvents" :key="edge.node.id">
                         <p class="cell rf-tag">{{ edge.node.type.name }}</p>
-                        <time :datetime="edge.node.debut">{{ edge.node.debut | formatDate }}</time>
+                        <time :datetime="edge.node.date">{{ edge.node.date | formatDate }}</time>
                         <div class="cell">
                             <h2>{{ edge.node.titre || edge.node.type.name }}</h2>
                             <a v-if="edge.node.compteRendu" :aria-label="'Compte rendu de ' + edge.node.titre" :href="edge.node.compteRendu" target="_blank" class="rf-link">Voir le compte rendu<span class="rf-fi-external-link-line" aria-label="nouvelle fenêtre"></span></a>
@@ -42,13 +41,13 @@
 
 <page-query>
   query Events {
-    events: allEvent {
+    events: allEvent(sortBy: "date", order: ASC) {
       edges {
         node {
           id
           titre
           pour
-          debut
+          date
           inscription
           compteRendu
           type {
@@ -85,14 +84,14 @@ export default {
     computed: {
         incomingEvents: function () {
             return this.$page.events.edges
-                .filter(event => moment(event.node.debut) >= moment().startOf('day'))
-                .sort(function (a,b) { return  moment(a.node.debut) > moment(b.node.debut)} );
+                .filter(event => moment(event.node.date) >= moment().startOf('day'))
+                .sort( (a,b) => moment(a.node.date) - moment(b.node.date));
 
         },
         pastEvents: function () {
-           return this.$page.events.edges
-                .filter(event => moment(event.node.debut) <= moment().startOf('day'))
-                .sort(function (a,b) { return  moment(a.node.debut) < moment(b.node.debut)} );
+            return this.$page.events.edges
+                .filter(event => moment(event.node.date) <= moment().startOf('day'))
+                .sort((a,b) =>   moment(b.node.date) - moment(a.node.date) );
         }
     },
 
@@ -146,15 +145,15 @@ export default {
             border-radius: 1rem;
         }
         .event .rf-tag { padding: 0; }
-        .event time { 
-            font-size: 0.85em; 
+        .event time {
+            font-size: 0.85em;
             color: #008262;
-            font-weight: 600; 
+            font-weight: 600;
         }
         .event > div { padding: .5em 0; }
-        .event .rf-link { 
+        .event .rf-link {
             font-size: .9em;
-            padding: 0; 
+            padding: 0;
         }
     }
 
