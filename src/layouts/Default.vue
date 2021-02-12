@@ -84,7 +84,7 @@ export default {
     },
 
     mounted () {
-        require('@gouvfr/all/dist/js/all.min.js');
+        //require('@gouvfr/all/dist/js/all.min.js');
 
         let src = "/js/header.min.js"
         let dsfr = document.createElement('script');
@@ -95,7 +95,9 @@ export default {
             scripts[0].remove();
         }
         document.body.appendChild(dsfr);
-    }
+    },
+
+
 };
 
 </script>

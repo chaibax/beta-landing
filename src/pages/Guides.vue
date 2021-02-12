@@ -47,20 +47,12 @@ query Events {
 
 
 <script>
-import Layout from "~/layouts/Default.vue";
-import EventCard from "~/components/EventCard.vue";
-import moment from 'moment'
 
-const now = moment()
+import moment from 'moment'
 
 export default {
     metaInfo: {
         title: 'Guides',
-    },
-
-    components: {
-        Layout,
-        EventCard,
     },
 
     computed: {
@@ -87,14 +79,15 @@ export default {
 </script>
 
 
-<style>
-    .rf-card {
-        border-radius: 5px;
-        box-shadow: 0 2px 0 0 #EEE !important;
-    }
+<style lang="scss">
 
     a {
         box-shadow: none;
+    }
+
+    .rf-card {
+        border-radius: 5px;
+        box-shadow: 0 2px 0 0 #EEE !important;
     }
 
     .rf-card__img {
@@ -103,11 +96,13 @@ export default {
         background-position: bottom center;
 
         text-align:center;
+
+        &:before {
+            padding-bottom: 70%;
+        }
     }
 
-    .rf-card__img::before {
-        padding-bottom: 70%;
-    }
+
 
 </style>
 
