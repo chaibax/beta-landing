@@ -96,8 +96,6 @@ export default {
         }
         document.body.appendChild(dsfr);
     },
-
-
 };
 
 </script>
