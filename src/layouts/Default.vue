@@ -66,6 +66,7 @@
   </div>
 </template>
 
+
 <static-query>
 query {
   metadata {
@@ -83,15 +84,17 @@ export default {
     },
 
     mounted () {
-      let src = "/js/header.min.js"
-      let dsfr = document.createElement('script');
-      dsfr.type = "text/javascript";
-      dsfr.src = src;
-      let scripts = document.querySelectorAll('[src="' + src + '"]');
-      if (scripts.length > 0) {
-        scripts[0].remove();
-      }
-      document.body.appendChild(dsfr);
+        require('@gouvfr/all/dist/js/all.min.js');
+
+        let src = "/js/header.min.js"
+        let dsfr = document.createElement('script');
+        dsfr.type = "text/javascript";
+        dsfr.src = src;
+        let scripts = document.querySelectorAll('[src="' + src + '"]');
+        if (scripts.length > 0) {
+            scripts[0].remove();
+        }
+        document.body.appendChild(dsfr);
     }
 };
 
@@ -126,7 +129,5 @@ h1 {
 .rf-header .rf-nav {
     box-shadow: none;
 }
-
-
 
 </style>
