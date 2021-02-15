@@ -7,8 +7,8 @@
             <div class="rf-container">
                 <div class="rf-grid-row rf-grid-row--gutters">
                     <div class="rf-col">
-                        <h1>Start-ups, vous avez besoin de design !</h1>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur ipsa perferendis omnis, obcaecati possimus vero minus eius? Labore, eveniet, numquam.</p>
+                        <h1>Votre service numérique a besoin de design !</h1>
+                        <p>L'équipe de Designers Transverses est là pour vous aider à concevoir des services publics numériques accessibles et simples d'usage.</p>
                     </div>
                 </div>
             </div>
@@ -22,10 +22,10 @@
                             <div class="rf-card__img" :style="{ 'background-image': 'url(./images/docteur-design.svg)'}">
                             </div>
                             <div class="rf-card__body">
-                                <h2 class="rf-card__title">Pour un check-up</h2>
-                                <p class="rf-card__desc">Une heure avec deux designers pour parler de votre produit, répondre à vos question, et identifier des pistes d'amélioration pour vos usagers</p>
+                                <h2 class="rf-card__title">Check-up Design</h2>
+                                <p class="rf-card__desc">Une heure avec deux designers pour parler de votre produit, répondre à vos questions, et identifier des pistes d'amélioration pour vos usagers.</p>
                                 <div class="call-to-action">
-                                    <a href="/" aria-label="'Réserver (nouvelle fenêtre)'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Réserver une session</a>
+                                    <a href="/" aria-label="'Réserver un check-up (nouvel onglet)'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Réserver une session</a>
                                 </div>
                             </div>
                          </div>
@@ -36,10 +36,10 @@
                             <div class="rf-card__img" :style="{ 'background-image': 'url(./images/designers.svg)'}">
                             </div>
                             <div class="rf-card__body">
-                                <h2 class="rf-card__title">Pour être accompagné</h2>
-                                <p class="rf-card__desc">Pour être accompagnés, organiser un atelier, ou juste pour un conseil, faites appel à à la <a href="https://startups-detat.slack.com/archives/CV6B2G6JD" target="_blank">@team-designers-transverses <span class="rf-fi-external-link-line"></span></a> sur Slack, ou donnez-nous quelques informations rapide sur votre besoin</p>
+                                <h2 class="rf-card__title">Accompagnement Design</h2>
+                                <p class="rf-card__desc">Pour être accompagné pour une problématique spécifique : organisation d'atelier, recherche utilisateur, conseil UX...</p>
                                 <div class="call-to-action">
-                                    <a href="https://airtable.com/shr6ASfxJDIz0RLhR" aria-label="'Réserver (nouvelle fenêtre)'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Demander de l'aide</a>
+                                    <a href="https://airtable.com/shr6ASfxJDIz0RLhR" aria-label="'Demander de l'aide (nouvel onglet)'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Demander de l'aide</a>
                                 </div>
                             </div>
                          </div>
@@ -50,10 +50,10 @@
                             <div class="rf-card__img" :style="{ 'background-image': 'url(./images/guides.svg)'}">
                             </div>
                             <div class="rf-card__body">
-                                <h2 class="rf-card__title">Pour vous former</h2>
-                                <p class="rf-card__desc">Découvrez nos guides pratiques et formations pour vous aider tout au long d'évolution de votre produit</p>
+                                <h2 class="rf-card__title">Formation Design</h2>
+                                <p class="rf-card__desc">Des formations et guides pratiques pour vous aider tout au long d'évolution de votre produit.</p>
                                 <div class="call-to-action">
-                                    <g-link to="/guides" aria-label="'Réserver (nouvelle fenêtre)'" target="_blank" class="rf-btn rf-btn--sm">Découvrez nos guides</g-link>
+                                    <g-link to="/guides" class="rf-btn rf-btn--sm">Découvrir nos guides</g-link>
                                 </div>
                             </div>
                          </div>
@@ -67,7 +67,7 @@
 
                 <div class="rf-grid-row rf-grid-row--gutters">
                     <div class="rf-col">
-                        <h1>Designers de la communauté !</h1>
+                        <h1>Pour les designers de la communauté</h1>
                     </div>
                 </div>
 
@@ -79,7 +79,7 @@
                                 <h2 class="rf-card__title">Vous venez d'arriver ?</h2>
                                 <p class="rf-card__desc">Bienvenue, faisons connaissance ! Vous avez probablement des questions :)</p>
                                 <div class="call-to-action">
-                                    <a href="https://startups-detat.slack.com/archives/CV6B2G6JD" aria-label="'Venez dire bonjour (nouvelle fenêtre)'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Venez dire bonjour</a>
+                                    <a href="https://startups-detat.slack.com/archives/CV6B2G6JD" aria-label="'Venez dire bonjour (nouvelle fenêtre)'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Se présenter</a>
                                 </div>
                             </div>
                          </div>
@@ -90,7 +90,7 @@
                             <figure class="illustration" :style="{ 'background-image': 'url(./images/interview.svg)'}"></figure>
                             <div class="rf-card__body">
                                 <h2 class="rf-card__title">Échangez entre designers</h2>
-                                <p class="rf-card__desc">Demandez conseil, partagez votre travailler, demandez une session de pair design sur le channel Slack dédié</p>
+                                <p class="rf-card__desc">Partagez votre travail, demandez conseil ou organisez du pair design.</p>
                                 <div class="call-to-action">
                                     <a href="https://startups-detat.slack.com/archives/C010EFL3EQ4" aria-label="'Rejoindre Slack (nouvelle fenêtre)'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Rejoindre Slack</a>
                                 </div>
@@ -103,7 +103,7 @@
                             <figure class="illustration" :style="{ 'background-image': 'url(./images/documentation.svg)'}"></figure>
                             <div class="rf-card__body">
                                 <h2 class="rf-card__title">Besoin de ressources ?</h2>
-                                <p class="rf-card__desc">La documentation design pourra vous aider</p>
+                                <p class="rf-card__desc">Parcourez la documentation sur les outils : design system, TestApic, etc.</p>
                                 <div class="call-to-action">
                                     <a href="https://doc.incubateur.net/design/" aria-label="'Voir la documentation (nouvelle fenêtre)'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Voir la documentation</a>
                                 </div>
@@ -117,9 +117,9 @@
                             <figure class="illustration" :style="{ 'background-image': 'url(./images/cafe-designers.svg)'}"></figure>
                             <div class="rf-card__body">
                                 <h2 class="rf-card__title">Participez aux cafés designers</h2>
-                                <p class="rf-card__desc">Des rendez-vous réguliers pour échanger sur notre pratique et nos expériences</p>
+                                <p class="rf-card__desc">Rencontrez des collègues pour échanger sur notre pratique et nos expériences.</p>
                                 <div class="call-to-action">
-                                    <a href="/" aria-label="'Prochains évènements'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Prochains évènements</a>
+                                    <a href="/events" class="rf-btn rf-btn--sm">Voir les évènements</a>
                                 </div>
                             </div>
                          </div>
@@ -146,7 +146,7 @@
                 <div class="rf-grid-row rf-grid-row--gutters">
                     <div class="rf-col-12">
                         <div class="action all-events">
-                            <g-link to="/events" aria-label="'Réserver (nouvelle fenêtre)'" target="_blank" class="rf-btn rf-btn--md">Voir tous les évènements</g-link>
+                            <g-link to="/events" class="rf-btn rf-btn--md">Voir tous les évènements</g-link>
                     </div>
                     </div>
                 </div>
