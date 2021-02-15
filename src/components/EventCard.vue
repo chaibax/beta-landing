@@ -58,11 +58,6 @@ export default {
     }
 
     .rf-card__img {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-
-        text-align:center;
 
         .rf-tag {
             background: #FFF;
@@ -76,28 +71,11 @@ export default {
     }
 
     .action {
-        //position: absolute;
-        //bottom: 1em;
-        //align-self: flex-end;
-       //justify-self: end;
        margin-top: auto;
-
-        .rf-btn {
-            border-radius: 100px;
-            background: #3355e3;
-        }
-
     }
 
 
-    .rf-card {
-        border-radius: 5px;
-        box-shadow: 0 2px 0 0 #EEE;
-    }
 
-    .rf-card__title {
-        font-size: 1.2em;
-    }
 
     a {
         box-shadow: none;

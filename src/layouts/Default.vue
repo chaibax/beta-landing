@@ -98,34 +98,68 @@ export default {
 
 </script>
 
-<style>
+<style lang="scss">
 
-body {
-    margin: 0;
-    background: #FCFCFC;
-}
+    body {
+        margin: 0;
+        background: #FCFCFC;
+    }
 
-h1 {
-    font-size: 2.2em;
-}
+    h1 {
+        font-size: 2.2em;
+    }
 
-.rf-service__title {
-    font-weight: 700;
-    font-size: 1.4rem;
-}
+    .rf-service__title {
+        font-weight: 700;
+        font-size: 1.4rem;
+    }
 
-.rf-header {
-    box-shadow: none;
-    border-bottom: 1px solid #F2F2F2;
-}
+    .rf-header {
+        box-shadow: none;
+        border-bottom: 1px solid #F2F2F2;
+    }
 
-.rf-footer {
-    margin-top: 5em;
-    border-top: 1px solid #F2F2F2;
-}
+    .rf-footer {
+        margin-top: 5em;
+        border-top: 1px solid #F2F2F2;
+    }
 
-.rf-header .rf-nav {
-    box-shadow: none;
-}
+    .rf-header .rf-nav {
+        box-shadow: none;
+    }
+
+    .rf-btn {
+        border-radius: 100px;
+        background: #3355e3;
+
+    }
+
+    .rf-card {
+        border-radius: 5px;
+        box-shadow: 0 2px 0 0 #EEE;
+
+        .rf-card__img {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            text-align:center;
+
+            .rf-tag {
+                background: #FFF;
+                font-weight: 600;
+            }
+        }
+
+
+        .call-to-action {
+           margin-top: auto;
+        }
+
+    }
+
+    .rf-card__title {
+        font-size: 1.2em;
+    }
+
 
 </style>
