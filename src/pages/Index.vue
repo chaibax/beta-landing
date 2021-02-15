@@ -24,7 +24,7 @@
                             <div class="rf-card__img" :style="{ 'background-image': 'url(./images/docteur-design.svg)'}">
                             </div>
                             <div class="rf-card__body">
-                                <h2 class="rf-card__title">Check-up Design</h2>
+                                <h2 class="rf-card__title">Check-up</h2>
                                 <p class="rf-card__desc">Une heure avec deux designers pour parler de votre produit, répondre à vos questions, et identifier des pistes d'amélioration pour vos usagers.</p>
                                 <div class="call-to-action">
                                     <a href="/" aria-label="'Réserver un check-up (nouvel onglet)'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Réserver une session</a>
@@ -38,7 +38,7 @@
                             <div class="rf-card__img" :style="{ 'background-image': 'url(./images/designers.svg)'}">
                             </div>
                             <div class="rf-card__body">
-                                <h2 class="rf-card__title">Accompagnement Design</h2>
+                                <h2 class="rf-card__title">Accompagnement</h2>
                                 <p class="rf-card__desc">Pour être accompagné pour une problématique spécifique : organisation d'atelier, recherche utilisateur, conseil UX...</p>
                                 <div class="call-to-action">
                                     <a href="https://airtable.com/shr6ASfxJDIz0RLhR" aria-label="'Demander de l'aide (nouvel onglet)'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Demander de l'aide</a>
@@ -52,7 +52,7 @@
                             <div class="rf-card__img" :style="{ 'background-image': 'url(./images/guides.svg)'}">
                             </div>
                             <div class="rf-card__body">
-                                <h2 class="rf-card__title">Formation Design</h2>
+                                <h2 class="rf-card__title">Formation</h2>
                                 <p class="rf-card__desc">Des formations et guides pratiques pour vous aider tout au long d'évolution de votre produit.</p>
                                 <div class="call-to-action">
                                     <g-link to="/guides" class="rf-btn rf-btn--sm">Découvrir nos guides</g-link>
@@ -225,7 +225,7 @@ export default {
     .promise {
         background: rgba(#FFF,1);
         padding: 2em;
-        max-width: 50em;
+        max-width: 55em;
         margin: auto;
         //max-width: 700px;
         //border: 1px solid #EDEDED;
@@ -239,6 +239,8 @@ export default {
     p {
         text-align: center;
         margin:auto;
+        max-width: 45em;
+        line-height: 1.5;
     }
 
 }
