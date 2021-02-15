@@ -81,11 +81,14 @@ export default {
         //align-self: flex-end;
        //justify-self: end;
        margin-top: auto;
+
+        .rf-btn {
+            border-radius: 100px;
+            background: #3355e3;
+        }
+
     }
-    .rf-btn {
-        border-radius: 100px;
-        background: #3355e3;
-    }
+
 
     .rf-card {
         border-radius: 5px;

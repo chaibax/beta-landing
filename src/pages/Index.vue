@@ -18,34 +18,43 @@
                 <div class="rf-grid-row rf-grid-row--gutters">
 
                     <div class="rf-col-12 rf-col-md-4" >
-                         <div class="rf-card">
+                         <div class="rf-card rf-card--no-arrow">
                             <div class="rf-card__img" :style="{ 'background-image': 'url(./images/docteur-design.svg)'}">
                             </div>
                             <div class="rf-card__body">
                                 <h2 class="rf-card__title">Pour un check-up</h2>
-                                <p class="rf-card__desc">Docteur Design c'est une heure avec deux designers pour échanger sur votre produit, répondre à vos question, identifier des pistes d'amélioration pour vos usagers</p>
+                                <p class="rf-card__desc">Une heure avec deux designers pour parler de votre produit, répondre à vos question, et identifier des pistes d'amélioration pour vos usagers</p>
+                                <div class="action">
+                                    <a href="/" aria-label="'Réserver (nouvelle fenêtre)'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Réserver une session</a>
+                                </div>
                             </div>
                          </div>
                     </div>
 
                     <div class="rf-col-12 rf-col-md-4" >
-                         <div class="rf-card">
-                            <div class="rf-card__img" :style="{ 'background': '#FFF'}">
+                         <div class="rf-card rf-card--no-arrow">
+                            <div class="rf-card__img" :style="{ 'background-image': 'url(./images/designers.svg)'}">
                             </div>
                             <div class="rf-card__body">
                                 <h2 class="rf-card__title">Pour être accompagné</h2>
-                                <p class="rf-card__desc">Pour être accompagnés, organiser un atelier, ou juste pour un conseil, faites appel à à la @team-designers-transverses sur Slack, ou donnez-nous quelques informations rapide</p>
+                                <p class="rf-card__desc">Pour être accompagnés, organiser un atelier, ou juste pour un conseil, faites appel à à la <a href="https://startups-detat.slack.com/archives/CV6B2G6JD" target="_blank">@team-designers-transverses <span class="rf-fi-external-link-line"></span></a> sur Slack, ou donnez-nous quelques informations rapide sur votre besoin</p>
+                                <div class="action">
+                                    <a href="https://airtable.com/shr6ASfxJDIz0RLhR" aria-label="'Réserver (nouvelle fenêtre)'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Demander de l'aide</a>
+                                </div>
                             </div>
                          </div>
                     </div>
 
                     <div class="rf-col-12 rf-col-md-4" >
-                         <div class="rf-card">
-                            <div class="rf-card__img" :style="{ 'background-image': 'url()'}">
+                         <div class="rf-card rf-card--no-arrow">
+                            <div class="rf-card__img" :style="{ 'background-image': 'url(./images/guides.svg)'}">
                             </div>
                             <div class="rf-card__body">
                                 <h2 class="rf-card__title">Pour vous former</h2>
-                                <p class="rf-card__desc">Faites appel à nous</p>
+                                <p class="rf-card__desc">Découvrez nos guides pratiques et formations pour vous aider tout au long d'évolution de votre produit</p>
+                                <div class="action">
+                                    <g-link to="/guides" aria-label="'Réserver (nouvelle fenêtre)'" target="_blank" class="rf-btn rf-btn--sm">Découvrez nos guides</g-link>
+                                </div>
                             </div>
                          </div>
                     </div>
@@ -58,48 +67,60 @@
 
                 <div class="rf-grid-row rf-grid-row--gutters">
                     <div class="rf-col">
-                        <h1>Designers de la communautés !</h1>
+                        <h1>Designers de la communauté !</h1>
                     </div>
                 </div>
 
                 <div class="rf-grid-row rf-grid-row--gutters">
                     <div class="rf-col-12 rf-col-md-3" >
-                         <div class="rf-card">
-                            <figure class="illustration" :style="{ 'background-image': 'url(./images/startups.svg)'}"></figure>
+                         <div class="rf-card rf-card--no-arrow">
+                            <figure class="illustration" :style="{ 'background-image': 'url(./images/welcome.svg)'}"></figure>
                             <div class="rf-card__body">
                                 <h2 class="rf-card__title">Vous venez d'arriver ?</h2>
                                 <p class="rf-card__desc">Bienvenue, faisons connaissance ! Vous avez probablement des questions :)</p>
+                                <div class="action">
+                                    <a href="https://startups-detat.slack.com/archives/CV6B2G6JD" aria-label="'Venez dire bonjour (nouvelle fenêtre)'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Venez dire bonjour</a>
+                                </div>
                             </div>
                          </div>
                     </div>
 
                     <div class="rf-col-12 rf-col-md-3" >
-                         <div class="rf-card">
+                         <div class="rf-card rf-card--no-arrow">
                             <figure class="illustration" :style="{ 'background-image': 'url(./images/interview.svg)'}"></figure>
                             <div class="rf-card__body">
                                 <h2 class="rf-card__title">Échangez entre designers</h2>
                                 <p class="rf-card__desc">Demandez conseil, partagez votre travailler, demandez une session de pair design sur le channel Slack dédié</p>
+                                <div class="action">
+                                    <a href="https://startups-detat.slack.com/archives/C010EFL3EQ4" aria-label="'Rejoindre Slack (nouvelle fenêtre)'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Rejoindre Slack</a>
+                                </div>
                             </div>
                          </div>
                     </div>
 
                     <div class="rf-col-12 rf-col-md-3" >
-                         <div class="rf-card">
-                            <figure class="illustration" :style="{ 'background-image': 'url(./images/community.svg)'}"></figure>
+                         <div class="rf-card rf-card--no-arrow">
+                            <figure class="illustration" :style="{ 'background-image': 'url(./images/documentation.svg)'}"></figure>
                             <div class="rf-card__body">
                                 <h2 class="rf-card__title">Besoin de ressources ?</h2>
                                 <p class="rf-card__desc">La documentation design pourra vous aider</p>
+                                <div class="action">
+                                    <a href="https://doc.incubateur.net/design/" aria-label="'Voir la documentation (nouvelle fenêtre)'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Voir la documentation</a>
+                                </div>
                             </div>
                          </div>
                     </div>
 
                     <div class="rf-col-12 rf-col-md-3" >
 
-                         <div class="rf-card">
-                            <figure class="illustration" :style="{ 'background-image': 'url(./images/docteur-design.svg)'}"></figure>
+                         <div class="rf-card rf-card--no-arrow">
+                            <figure class="illustration" :style="{ 'background-image': 'url(./images/cafe-designers.svg)'}"></figure>
                             <div class="rf-card__body">
-                                <h2 class="rf-card__title">Pour un check-up</h2>
-                                <p class="rf-card__desc">Docteur Design c'est une heure avec deux designers pour échanger sur votre produit, répondre à vos question, identifier des pistes d'amélioration pour vos usagers</p>
+                                <h2 class="rf-card__title">Participez aux cafés designers</h2>
+                                <p class="rf-card__desc">Des rendez-vous réguliers pour échanger sur notre pratique et nos expériences</p>
+                                <div class="action">
+                                    <a href="/" aria-label="'Prochains évènements'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Prochains évènements</a>
+                                </div>
                             </div>
                          </div>
                     </div>
@@ -116,18 +137,19 @@
                     </div>
                 </div>
 
-                <div class="rf-col-12 rf-col-md-3" >
-                     <div class="rf-card">
-                        <div class="rf-card__img" :style="{ 'background-image': 'url()'}">
-                        </div>
-                        <div class="rf-card__body">
-                            <h2 class="rf-card__title">Pour un check-up</h2>
-                            <p class="rf-card__desc">Docteur Design c'est une heure avec deux designers pour échanger sur votre produit, répondre à vos question, identifier des pistes d'amélioration pour vos usagers</p>
-                        </div>
-                     </div>
+                <div class="rf-grid-row rf-grid-row--gutters">
+                    <div class="rf-col-12 rf-col-md-3" v-for="(edge, index) in incomingEvents" :key="edge.node.id" >
+                        <EventCard :event="edge.node" />
+                    </div>
                 </div>
 
-
+                <div class="rf-grid-row rf-grid-row--gutters">
+                    <div class="rf-col-12">
+                        <div class="action all-events">
+                            <g-link to="/events" aria-label="'Réserver (nouvelle fenêtre)'" target="_blank" class="rf-btn rf-btn--md">Voir tous les évènements</g-link>
+                    </div>
+                    </div>
+                </div>
 
             </div>
 
@@ -136,8 +158,57 @@
   </Layout>
 </template>
 
-<style lang="scss">
+<page-query>
+  query Events {
+    events: allEvent(sortBy: "date", order: ASC) {
+      edges {
+        node {
+          id
+          titre
+          pour
+          date
+          inscription
+          compteRendu
+          type {
+            name
+            pour
+            illustration {
+              url
+            }
+          }
+        }
+      }
+    }
+  }
+</page-query>
 
+<script>
+import moment from 'moment'
+import EventCard from "~/components/EventCard.vue";
+moment.updateLocale('fr', {})
+
+
+export default {
+    metaInfo: {
+        title: 'Évènements',
+    },
+
+    components: {
+        EventCard,
+    },
+
+    computed: {
+        incomingEvents: function () {
+            return this.$page.events.edges
+                .filter(event => moment(event.node.date) >= moment().startOf('day'))
+                .sort( (a,b) => moment(a.node.date) - moment(b.node.date))
+                .slice(0,4);
+        },
+    }
+}
+</script>
+
+<style lang="scss">
 
 .hero {
     height: 30em;
@@ -161,9 +232,29 @@
     background: none;
 }
 
+.action {
+    //position: absolute;
+    //bottom: 1em;
+    //align-self: flex-end;
+   //justify-self: end;
+   margin-top: auto;
+
+    .rf-btn {
+        border-radius: 100px;
+        background: #3355e3;
+    }
+
+}
+
+.action.all-events {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .illustration {
     display: block;
-    border-radius: 200px;
+    //border-radius: 200px;
     overflow: hidden;
 
     width: 60%;

@@ -36,9 +36,7 @@
                     </span>
                 </div>
                 <div class="rf-footer__content">
-                    <p class="rf-footer__content-desc">Les Designers Transverses sont des membres de la communauté <a href="https://beta.gouv.fr/">beta.gouv.fr</a>.</p>
-
-                    <p class="rf-footer__content-desc">Le <a href="https://github.com/betagouv/designers-transverses">code source</a> est disponible en licence libre. Illustrations de <a href="https://storyset.com/people"> Freepik Storyset</a>.</p>
+                    <p class="rf-footer__content-desc">Les Designers Transverses sont des membres de la communauté <a href="https://beta.gouv.fr/">beta.gouv.fr</a>. <br>Le <a href="https://github.com/betagouv/designers-transverses">code source</a> est disponible en licence libre. Illustrations de <a href="https://storyset.com/people"> Freepik Storyset</a>.</p>
                     <ul class="rf-footer__content-list">
                         <li>
                             <a class="rf-footer__content-link" href="https://beta.gouv.fr">beta.gouv.fr</a>
