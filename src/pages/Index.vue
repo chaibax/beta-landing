@@ -8,19 +8,13 @@
                 <div class="rf-grid-row rf-grid-row--gutters">
                     <div class="rf-col">
                         <h1>Votre service numérique a besoin de design !</h1>
-                        <p>L'équipe de Designers Transverses est là pour vous aider à concevoir des services publics numériques intuitifs, accessible et simple d'usage.</p>
+                        <p>L'équipe de Designers Transverses est là pour vous aider à concevoir des services publics numériques accessibles et simples d'usage.</p>
                     </div>
                 </div>
             </div>
             </section>
 
             <div class="rf-container">
-                <div class="rf-grid-row rf-grid-row--gutters">
-                    <div class="rf-col">
-                        <h1>Pour les Startups d'État</h1>
-                    </div>
-                </div>
-
                 <div class="rf-grid-row rf-grid-row--gutters">
 
                     <div class="rf-col-12 rf-col-md-4" >
@@ -83,7 +77,7 @@
                             <figure class="illustration" :style="{ 'background-image': 'url(./images/welcome.svg)'}"></figure>
                             <div class="rf-card__body">
                                 <h2 class="rf-card__title">Vous venez d'arriver ?</h2>
-                                <p class="rf-card__desc">Bienvenue ! Faisons connaissance que nous vous accueillons :)</p>
+                                <p class="rf-card__desc">Bienvenue, faisons connaissance ! Vous avez probablement des questions :)</p>
                                 <div class="action">
                                     <a href="https://startups-detat.slack.com/archives/CV6B2G6JD" aria-label="'Venez dire bonjour (nouvelle fenêtre)'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Se présenter</a>
                                 </div>
@@ -109,7 +103,7 @@
                             <figure class="illustration" :style="{ 'background-image': 'url(./images/documentation.svg)'}"></figure>
                             <div class="rf-card__body">
                                 <h2 class="rf-card__title">Besoin de ressources ?</h2>
-                                <p class="rf-card__desc">Parcourez la documentation pour trouver la réponses à vos questions sur le design system, TestApic, etc.</p>
+                                <p class="rf-card__desc">Parcourez la documentation sur les outils : design system, TestApic, etc.</p>
                                 <div class="action">
                                     <a href="https://doc.incubateur.net/design/" aria-label="'Voir la documentation (nouvelle fenêtre)'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Voir la documentation</a>
                                 </div>
