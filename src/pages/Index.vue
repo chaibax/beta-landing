@@ -7,14 +7,20 @@
             <div class="rf-container">
                 <div class="rf-grid-row rf-grid-row--gutters">
                     <div class="rf-col">
-                        <h1>Start-ups, vous avez besoin de design !</h1>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur ipsa perferendis omnis, obcaecati possimus vero minus eius? Labore, eveniet, numquam.</p>
+                        <h1>Votre service numérique a besoin de design !</h1>
+                        <p>L'équipe de Designers Transverses est là pour vous aider à concevoir des services publics numériques intuitifs, accessible et simple d'usage.</p>
                     </div>
                 </div>
             </div>
             </section>
 
             <div class="rf-container">
+                <div class="rf-grid-row rf-grid-row--gutters">
+                    <div class="rf-col">
+                        <h1>Pour les Startups d'État</h1>
+                    </div>
+                </div>
+
                 <div class="rf-grid-row rf-grid-row--gutters">
 
                     <div class="rf-col-12 rf-col-md-4" >
@@ -36,7 +42,7 @@
                             <div class="rf-card__img" :style="{ 'background-image': 'url(./images/designers.svg)'}">
                             </div>
                             <div class="rf-card__body">
-                                <h2 class="rf-card__title">Pour être accompagné</h2>
+                                <h2 class="rf-card__title">Accompagnement Design</h2>
                                 <p class="rf-card__desc">Pour être accompagnés, organiser un atelier, ou juste pour un conseil, faites appel à à la <a href="https://startups-detat.slack.com/archives/CV6B2G6JD" target="_blank">@team-designers-transverses <span class="rf-fi-external-link-line"></span></a> sur Slack, ou donnez-nous quelques informations rapide sur votre besoin</p>
                                 <div class="action">
                                     <a href="https://airtable.com/shr6ASfxJDIz0RLhR" aria-label="'Demander de l'aide (nouvel onglet)'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Demander de l'aide</a>
@@ -50,7 +56,7 @@
                             <div class="rf-card__img" :style="{ 'background-image': 'url(./images/guides.svg)'}">
                             </div>
                             <div class="rf-card__body">
-                                <h2 class="rf-card__title">Pour vous former</h2>
+                                <h2 class="rf-card__title">Formation Design</h2>
                                 <p class="rf-card__desc">Découvrez nos guides pratiques et formations pour vous aider tout au long d'évolution de votre produit</p>
                                 <div class="action">
                                     <g-link to="/guides" class="rf-btn rf-btn--sm">Découvrir nos guides</g-link>
@@ -67,7 +73,7 @@
 
                 <div class="rf-grid-row rf-grid-row--gutters">
                     <div class="rf-col">
-                        <h1>Designers de la communauté !</h1>
+                        <h1>Pour les designers de la communauté</h1>
                     </div>
                 </div>
 
