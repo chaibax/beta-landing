@@ -104,11 +104,19 @@ export default {
 </script>
 
 
-<style>
+<style lang="scss">
     .events {
         display: table;
         border-collapse: separate;
         border-spacing: 1em;
+
+        h2 {
+            display: inline-block;
+            margin: 0;
+            margin-right: 1em;
+           font-size: 1.1rem;
+        }
+
     }
 
     .event {
@@ -119,12 +127,6 @@ export default {
         display: table-cell;
     }
 
-    h2 {
-        display: inline-block;
-        margin: 0;
-        margin-right: 1em;
-        font-size: 1.1rem;
-    }
 
     .rf-link .rf-fi-external-link-line {
         margin-left: .5em;

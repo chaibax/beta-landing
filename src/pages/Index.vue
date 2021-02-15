@@ -24,7 +24,7 @@
                             <div class="rf-card__body">
                                 <h2 class="rf-card__title">Check-up Design</h2>
                                 <p class="rf-card__desc">Une heure avec deux designers pour parler de votre produit, répondre à vos questions, et identifier des pistes d'amélioration pour vos usagers.</p>
-                                <div class="action">
+                                <div class="call-to-action">
                                     <a href="/" aria-label="'Réserver un check-up (nouvel onglet)'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Réserver une session</a>
                                 </div>
                             </div>
@@ -38,7 +38,7 @@
                             <div class="rf-card__body">
                                 <h2 class="rf-card__title">Accompagnement Design</h2>
                                 <p class="rf-card__desc">Pour être accompagné pour une problématique spécifique : organisation d'atelier, recherche utilisateur, conseil UX...</p>
-                                <div class="action">
+                                <div class="call-to-action">
                                     <a href="https://airtable.com/shr6ASfxJDIz0RLhR" aria-label="'Demander de l'aide (nouvel onglet)'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Demander de l'aide</a>
                                 </div>
                             </div>
@@ -52,7 +52,7 @@
                             <div class="rf-card__body">
                                 <h2 class="rf-card__title">Formation Design</h2>
                                 <p class="rf-card__desc">Des formations et guides pratiques pour vous aider tout au long d'évolution de votre produit.</p>
-                                <div class="action">
+                                <div class="call-to-action">
                                     <g-link to="/guides" class="rf-btn rf-btn--sm">Découvrir nos guides</g-link>
                                 </div>
                             </div>
@@ -78,7 +78,7 @@
                             <div class="rf-card__body">
                                 <h2 class="rf-card__title">Vous venez d'arriver ?</h2>
                                 <p class="rf-card__desc">Bienvenue, faisons connaissance ! Vous avez probablement des questions :)</p>
-                                <div class="action">
+                                <div class="call-to-action">
                                     <a href="https://startups-detat.slack.com/archives/CV6B2G6JD" aria-label="'Venez dire bonjour (nouvelle fenêtre)'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Se présenter</a>
                                 </div>
                             </div>
@@ -91,7 +91,7 @@
                             <div class="rf-card__body">
                                 <h2 class="rf-card__title">Échangez entre designers</h2>
                                 <p class="rf-card__desc">Partagez votre travail, demandez conseil ou organisez du pair design.</p>
-                                <div class="action">
+                                <div class="call-to-action">
                                     <a href="https://startups-detat.slack.com/archives/C010EFL3EQ4" aria-label="'Rejoindre Slack (nouvelle fenêtre)'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Rejoindre Slack</a>
                                 </div>
                             </div>
@@ -104,7 +104,7 @@
                             <div class="rf-card__body">
                                 <h2 class="rf-card__title">Besoin de ressources ?</h2>
                                 <p class="rf-card__desc">Parcourez la documentation sur les outils : design system, TestApic, etc.</p>
-                                <div class="action">
+                                <div class="call-to-action">
                                     <a href="https://doc.incubateur.net/design/" aria-label="'Voir la documentation (nouvelle fenêtre)'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Voir la documentation</a>
                                 </div>
                             </div>
@@ -118,7 +118,7 @@
                             <div class="rf-card__body">
                                 <h2 class="rf-card__title">Participez aux cafés designers</h2>
                                 <p class="rf-card__desc">Rencontrez des collègues pour échanger sur notre pratique et nos expériences.</p>
-                                <div class="action">
+                                <div class="call-to-action">
                                     <a href="/events" class="rf-btn rf-btn--sm">Voir les évènements</a>
                                 </div>
                             </div>
@@ -205,7 +205,7 @@ export default {
                 .slice(0,4);
         },
     }
-}
+};
 </script>
 
 <style lang="scss">
@@ -232,19 +232,6 @@ export default {
     background: none;
 }
 
-.action {
-    //position: absolute;
-    //bottom: 1em;
-    //align-self: flex-end;
-   //justify-self: end;
-   margin-top: auto;
-
-    .rf-btn {
-        border-radius: 100px;
-        background: #3355e3;
-    }
-
-}
 
 .action.all-events {
     display: flex;
