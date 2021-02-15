@@ -53,7 +53,7 @@
                                 <h2 class="rf-card__title">Pour vous former</h2>
                                 <p class="rf-card__desc">Découvrez nos guides pratiques et formations pour vous aider tout au long d'évolution de votre produit</p>
                                 <div class="action">
-                                    <g-link to="/guides" class="rf-btn rf-btn--sm">Découvrez nos guides</g-link>
+                                    <g-link to="/guides" class="rf-btn rf-btn--sm">Découvrir nos guides</g-link>
                                 </div>
                             </div>
                          </div>
@@ -79,7 +79,7 @@
                                 <h2 class="rf-card__title">Vous venez d'arriver ?</h2>
                                 <p class="rf-card__desc">Bienvenue, faisons connaissance ! Vous avez probablement des questions :)</p>
                                 <div class="action">
-                                    <a href="https://startups-detat.slack.com/archives/CV6B2G6JD" aria-label="'Venez dire bonjour (nouvelle fenêtre)'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Venez dire bonjour</a>
+                                    <a href="https://startups-detat.slack.com/archives/CV6B2G6JD" aria-label="'Venez dire bonjour (nouvelle fenêtre)'" target="_blank" class="rf-btn rf-btn--sm rf-fi-external-link-line rf-btn--icon-right">Se présenter</a>
                                 </div>
                             </div>
                          </div>
@@ -119,7 +119,7 @@
                                 <h2 class="rf-card__title">Participez aux cafés designers</h2>
                                 <p class="rf-card__desc">Des rendez-vous réguliers pour échanger sur notre pratique et nos expériences</p>
                                 <div class="action">
-                                    <a href="/events" class="rf-btn rf-btn--sm">Prochains évènements</a>
+                                    <a href="/events" class="rf-btn rf-btn--sm">Voir les évènements</a>
                                 </div>
                             </div>
                          </div>
