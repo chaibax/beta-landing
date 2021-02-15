@@ -3,12 +3,14 @@
 
         <div>
 
-            <section class="hero">
+            <section class="hero" :style="{'background-image': 'url(./images/home.svg)'}">
             <div class="rf-container">
                 <div class="rf-grid-row rf-grid-row--gutters">
                     <div class="rf-col">
+                        <div class="promise">
                         <h1>Votre service numérique a besoin de design !</h1>
                         <p>L'équipe de Designers Transverses est là pour vous aider à concevoir des services publics numériques accessibles et simples d'usage.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -215,13 +217,26 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: -4em;
+
+    //background: url('');
+    background-size: cover;
+
+    .promise {
+        background: rgba(#FFF,1);
+        padding: 2em;
+        max-width: 50em;
+        margin: auto;
+        //max-width: 700px;
+        //border: 1px solid #EDEDED;
+    }
 
     h1 {
         text-align:center;
+
     }
 
     p {
-        max-width: 40em;
         text-align: center;
         margin:auto;
     }

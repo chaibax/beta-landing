@@ -141,7 +141,7 @@ export default {
         .rf-card__img {
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: center center;
+            background-position: center 30%;
             text-align:center;
 
             .rf-tag {
