@@ -190,7 +190,7 @@ moment.updateLocale('fr', {})
 
 export default {
     metaInfo: {
-        title: 'Évènements',
+        title: "Du design pour votre Startup d'État",
     },
 
     components: {
