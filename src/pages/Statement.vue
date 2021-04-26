@@ -1,9 +1,9 @@
 <template>
   <Layout>
     <div>
-        <div class="rf-container">
-            <div class="rf-grid-row rf-grid-row--gutters">
-                <div class="rf-col">
+        <div class="fr-container">
+            <div class="fr-grid-row fr-grid-row--gutters">
+                <div class="fr-col">
 
 					<h1>Déclaration d'accessibilité</h1>
 
@@ -68,12 +68,12 @@
 import Layout from "~/layouts/Default.vue";
 
 export default {
-    metaInfo: {
-        title: "Déclaration d'accessibilité",
-    },
+  metaInfo: {
+    title: "Déclaration d'accessibilité",
+  },
 
-    components: {
-        Layout,
-    },
-}
+  components: {
+    Layout,
+  },
+};
 </script>
