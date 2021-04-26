@@ -25,12 +25,6 @@
         <div class="fr-grid-row fr-grid-row--gutters">
           <div class="fr-col-12 fr-col-md-4">
             <div class="fr-card fr-card--no-arrow">
-              <div
-                class="fr-card__img"
-                :style="{
-                  'background-image': 'url(./images/docteur-design.svg)',
-                }"
-              ></div>
               <div class="fr-card__body">
                 <h2 class="fr-card__title">Check-up</h2>
                 <p class="fr-card__desc">
@@ -48,15 +42,17 @@
                   >
                 </div>
               </div>
+              <div
+                class="fr-card__img"
+                :style="{
+                  'background-image': 'url(./images/docteur-design.svg)',
+                }"
+              ></div>
             </div>
           </div>
 
           <div class="fr-col-12 fr-col-md-4">
             <div class="fr-card fr-card--no-arrow">
-              <div
-                class="fr-card__img"
-                :style="{ 'background-image': 'url(./images/designers.svg)' }"
-              ></div>
               <div class="fr-card__body">
                 <h2 class="fr-card__title">Accompagnement</h2>
                 <p class="fr-card__desc">
@@ -73,15 +69,15 @@
                   >
                 </div>
               </div>
+              <div
+                class="fr-card__img"
+                :style="{ 'background-image': 'url(./images/designers.svg)' }"
+              ></div>
             </div>
           </div>
 
           <div class="fr-col-12 fr-col-md-4">
             <div class="fr-card fr-card--no-arrow">
-              <div
-                class="fr-card__img"
-                :style="{ 'background-image': 'url(./images/guides.svg)' }"
-              ></div>
               <div class="fr-card__body">
                 <h2 class="fr-card__title">Formation</h2>
                 <p class="fr-card__desc">
@@ -94,6 +90,10 @@
                   >
                 </div>
               </div>
+              <div
+                class="fr-card__img"
+                :style="{ 'background-image': 'url(./images/guides.svg)' }"
+              ></div>
             </div>
           </div>
         </div>
@@ -110,10 +110,6 @@
           <div class="fr-grid-row fr-grid-row--gutters">
             <div class="fr-col-12 fr-col-md-3">
               <div class="fr-card fr-card--no-arrow">
-                <figure
-                  class="illustration"
-                  :style="{ 'background-image': 'url(./images/welcome.svg)' }"
-                ></figure>
                 <div class="fr-card__body">
                   <h2 class="fr-card__title">Vous venez d'arriver ?</h2>
                   <p class="fr-card__desc">
@@ -130,15 +126,15 @@
                     >
                   </div>
                 </div>
+                <figure
+                  class="illustration"
+                  :style="{ 'background-image': 'url(./images/welcome.svg)' }"
+                ></figure>
               </div>
             </div>
 
             <div class="fr-col-12 fr-col-md-3">
               <div class="fr-card fr-card--no-arrow">
-                <figure
-                  class="illustration"
-                  :style="{ 'background-image': 'url(./images/interview.svg)' }"
-                ></figure>
                 <div class="fr-card__body">
                   <h2 class="fr-card__title">Échangez entre designers</h2>
                   <p class="fr-card__desc">
@@ -155,17 +151,15 @@
                     >
                   </div>
                 </div>
+                <figure
+                  class="illustration"
+                  :style="{ 'background-image': 'url(./images/interview.svg)' }"
+                ></figure>
               </div>
             </div>
 
             <div class="fr-col-12 fr-col-md-3">
               <div class="fr-card fr-card--no-arrow">
-                <figure
-                  class="illustration"
-                  :style="{
-                    'background-image': 'url(./images/documentation.svg)',
-                  }"
-                ></figure>
                 <div class="fr-card__body">
                   <h2 class="fr-card__title">Besoin de ressources ?</h2>
                   <p class="fr-card__desc">
@@ -182,17 +176,17 @@
                     >
                   </div>
                 </div>
+                <figure
+                  class="illustration"
+                  :style="{
+                    'background-image': 'url(./images/documentation.svg)',
+                  }"
+                ></figure>
               </div>
             </div>
 
             <div class="fr-col-12 fr-col-md-3">
               <div class="fr-card fr-card--no-arrow">
-                <figure
-                  class="illustration"
-                  :style="{
-                    'background-image': 'url(./images/cafe-designers.svg)',
-                  }"
-                ></figure>
                 <div class="fr-card__body">
                   <h2 class="fr-card__title">Participez aux cafés designers</h2>
                   <p class="fr-card__desc">
@@ -205,6 +199,12 @@
                     >
                   </div>
                 </div>
+                <figure
+                  class="illustration"
+                  :style="{
+                    'background-image': 'url(./images/cafe-designers.svg)',
+                  }"
+                ></figure>
               </div>
             </div>
           </div>

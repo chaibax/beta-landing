@@ -15,6 +15,10 @@
             :key="edge.node.id"
           >
             <a class="fr-card" :href="edge.node.lien">
+              <div class="fr-card__body">
+                <h2 class="fr-card__title">{{ edge.node.titre }}</h2>
+                <p class="fr-card__desc">{{ edge.node.description }}</p>
+              </div>
               <div
                 class="fr-card__img"
                 :style="{
@@ -22,10 +26,6 @@
                     'url(' + edge.node.illustration[0].url + ')',
                 }"
               ></div>
-              <div class="fr-card__body">
-                <h2 class="fr-card__title">{{ edge.node.titre }}</h2>
-                <p class="fr-card__desc">{{ edge.node.description }}</p>
-              </div>
             </a>
           </div>
         </div>

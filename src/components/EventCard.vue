@@ -1,12 +1,7 @@
 <template>
   <div class="fr-card fr-card--no-arrow">
     <!-- g-link  :to="'events/' + event.id" -->
-    <div
-      class="fr-card__img"
-      :style="{ 'background-image': 'url(' + cover + ')' }"
-    >
-      <p class="fr-tag">{{ event.type.name }}</p>
-    </div>
+
     <div class="fr-card__body">
       <time class="fr-card__detail" :datetime="event.debut">{{
         event.date | formatDateTime
@@ -28,6 +23,12 @@
           >Réserver</a
         >
       </div>
+    </div>
+    <div
+      class="fr-card__img"
+      :style="{ 'background-image': 'url(' + cover + ')' }"
+    >
+      <p class="fr-tag">{{ event.type.name }}</p>
     </div>
   </div>
 </template>
