@@ -19,7 +19,7 @@
 
     <Header :service_name="$static.metadata.siteName" />
 
-    <div id="content">
+    <div id="content" class="fr-my-4w">
       <slot />
     </div>
 
