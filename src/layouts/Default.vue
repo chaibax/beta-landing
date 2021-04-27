@@ -26,10 +26,13 @@
     <footer class="fr-footer" role="contentinfo" id="footer">
       <div class="fr-container">
         <div class="fr-footer__body">
-          <div class="fr-footer__brand">
-            <span class="fr-logo">
-              <span class="fr-logo__title">république <br />française</span>
-            </span>
+          <div class="fr-footer__brand fr-enlarge-link">
+            <a href="/" title="Retour à l’accueil">
+              <p class="fr-logo">
+                république
+                <br>française
+              </p>
+            </a>
           </div>
           <div class="fr-footer__content">
             <p class="fr-footer__content-desc">
@@ -42,17 +45,11 @@
               <a href="https://storyset.com/people"> Freepik Storyset</a>.
             </p>
             <ul class="fr-footer__content-list">
-              <li>
-                <a class="fr-footer__content-link" href="https://beta.gouv.fr"
-                  >beta.gouv.fr</a
-                >
+              <li class="fr-footer__content-item">
+                <a class="fr-footer__content-link" href="https://beta.gouv.fr">beta.gouv.fr</a>
               </li>
-              <li>
-                <a
-                  class="fr-footer__content-link"
-                  href="https://doc.incubateur.net/design/"
-                  >Documentation Design</a
-                >
+              <li class="fr-footer__content-item">
+                <a class="fr-footer__content-link" href="https://doc.incubateur.net/design/">Documentation Design</a>
               </li>
             </ul>
           </div>
@@ -60,12 +57,13 @@
         <div class="fr-footer__bottom">
           <ul class="fr-footer__bottom-list">
             <li class="fr-footer__bottom-item">
-              <a class="fr-footer__bottom-link" href="/accessibility"
-                >Accessibilité non conforme</a
-              >
+              <a class="fr-footer__bottom-link" href="/accessibility">Accessibilité : non conforme</a>
             </li>
           </ul>
-          <div class="fr-footer__bottom-copy">© République Française 2021</div>
+          <div class="fr-footer__bottom-copy">
+            <p>Sauf mention contraire, tous les textes de ce site sont sous <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" target="_blank">licence etalab-2.0</a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
