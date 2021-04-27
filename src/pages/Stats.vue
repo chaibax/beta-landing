@@ -84,16 +84,12 @@
                       <strong>{{ designers }}</strong> designers dans la
                       communauté
                     </h2>
-                    <p>
-                      <a
+                    <p><a
                         href="https://airtable.com/shrKVGcaSzzXxHI93/tblLXKFp5fHLE8PQ6"
-                        target="_blank"
+                        target="_blank" rel="noopener"
+                        title="Tous les designers - nouvelle fenêtre"
                         >Tous les designers
-                        <span
-                          class="fr-fi-external-link-line"
-                          aria-label="nouvelle fenêtre"
-                        ></span
-                      ></a>
+                        </a>
                       ayant intégré une startup d'État ou l'équipe transverse.
                     </p>
                   </div>
@@ -105,13 +101,10 @@
                     <p>
                       Embarquement des nouveaux designers de la communauté.<br /><a
                         href="https://airtable.com/shrynjHWqvRIfMhZB"
-                        target="_blank"
+                        target="_blank" rel="noopener"
+                        title="Accueil de nouveau designer - nouvelle fenêtre"
                         >On ne t'a pas accueilli ?
-                        <span
-                          class="fr-fi-external-link-line"
-                          aria-label="nouvelle fenêtre"
-                        ></span
-                      ></a>
+                        </a>
                     </p>
                   </div>
                   <div class="kpi">
@@ -120,12 +113,10 @@
                     </h2>
                     <p>
                       <a href="#"
+                      target="_blank" rel="noopener"
+                        title="Documents partagés à la communauté - nouvelle fenêtre"
                         >Documents partagés à la communauté
-                        <span
-                          class="fr-fi-external-link-line"
-                          aria-label="nouvelle fenêtre"
-                        ></span></a
-                      >de travail, maquettes, restitution d'ateliers.
+                        </a> de travail, maquettes, restitution d'ateliers.
                     </p>
                   </div>
                 </div>
