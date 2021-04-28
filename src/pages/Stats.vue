@@ -194,6 +194,7 @@ query {
                 phase
                 designers
                 phase
+                missions
             }
         }
     }
@@ -246,8 +247,8 @@ export default {
     },
 
     accompaniedStartup: function () {
-      return this.$page.startups.edges.filter((event) =>
-        ["Accompagné", "En cours"].includes(event.node.statut)
+      return this.$page.startups.edges.filter(
+          (startup) => startup.node.missions.length > 0
       ).length;
     },
 
@@ -261,17 +262,20 @@ export default {
     },
 
     accompaniedYouth: function () {
-      var total = this.$page.startups.edges.length;
+      // Nombre de jeunes SE
+      var totalCount = this.$page.startups.edges.filter(
+        (startup) => ["investigation", "construction"].includes(startup.node.phase)
+      ).length;
 
-      var startupsWithDesigner = this.$page.startups.edges
-        .filter((designer) =>
-          ["Accompagné", "En cours"].includes(designer.node.statut)
-        )
-        .filter((designer) =>
-          ["investigation", "construction"].includes(designer.node.phase)
+      // Nombre de jeunes SE accompagnes
+      var accompaniedCount = this.$page.startups.edges
+        .filter((startup) => startup.node.missions.length > 0)
+        .filter((startup) =>
+          ["investigation", "construction"].includes(startup.node.phase)
         ).length;
 
-      return Math.round((startupsWithDesigner / total) * 100) + "%";
+      // Percentage
+      return Math.round((accompaniedCount / totalCount) * 100) + "%";
     },
 
     designers: function () {
