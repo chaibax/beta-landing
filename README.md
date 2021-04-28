@@ -14,4 +14,17 @@ gridsome develop
 ````
 
 Le site est accessible à l'adresse : `http://localhost:8080`
-Pour explorer les données accessibles : `http://localhost:8080/___explore`
+
+## Aide au développement
+
+* Pour explorer les données accessibles : 
+````
+http://localhost:8080/___explore
+````
+L'onglet Docs montre le schéma accessible.
+
+
+* Pour voir des exemples du DSFR :
+````
+cd node_modules/@gouvfr/dsfr && npx http-server -o
+````

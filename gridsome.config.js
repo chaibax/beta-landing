@@ -14,7 +14,7 @@ module.exports = {
           use: '@gridsome/source-airtable',
           options: {
             apiKey: 'keybQLCgbSWWJqps8',
-            base: 'appTCC7VS12lEj0oV',
+            base: 'appTCC7VS12lEj0oV', // Évènements
             tables: [
                 {
                     name: 'Planning', // required
@@ -41,7 +41,7 @@ module.exports = {
           use: '@gridsome/source-airtable',
           options: {
             apiKey: 'keybQLCgbSWWJqps8',
-            base: 'appt60lhtZtqGytRF',
+            base: 'appt60lhtZtqGytRF', // Base Designers 
             tables: [
                 {
                     name: "Startups d'État", // required
