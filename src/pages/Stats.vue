@@ -109,7 +109,7 @@
                   </div>
                   <div class="kpi">
                     <h2>
-                      <strong>{{ missions }}</strong> retours d'expérience
+                      <strong>{{ rex }}</strong> retours d'expérience
                     </h2>
                     <p>
                       <a href="#"
@@ -242,16 +242,12 @@ export default {
     Layout,
   },
   computed: {
-    allEvents: function () {
-      return this.$page.events.edges.length;
-    },
-
+    // Pour les SE
     accompaniedStartup: function () {
       return this.$page.startups.edges.filter(
           (startup) => startup.node.missions.length > 0
       ).length;
     },
-
     startupsWithDesignerPercent: function () {
       var total = this.$page.startups.edges.length;
       var startupsWithDesigner = this.$page.startups.edges.filter(
@@ -260,7 +256,6 @@ export default {
 
       return Math.round((startupsWithDesigner / total) * 100) + "%";
     },
-
     accompaniedYouth: function () {
       // Nombre de jeunes SE
       var totalCount = this.$page.startups.edges.filter(
@@ -278,10 +273,10 @@ export default {
       return Math.round((accompaniedCount / totalCount) * 100) + "%";
     },
 
+    // Pour les designers
     designers: function () {
       return this.$page.designers.edges.length;
     },
-
     welcomedDesigners: function () {
       var total = this.$page.designers.edges.filter(
         (designer) =>
@@ -298,12 +293,17 @@ export default {
 
       return Math.round((welcomed / total) * 100) + "%";
     },
-
-    missions: function () {
+    rex: function () {
       return this.$page.missions.edges.filter((mission) =>
         ["Terminé"].includes(mission.node.statut)
       ).length;
     },
+
+    // Pour la communauté
+    allEvents: function () {
+      return this.$page.events.edges.length;
+    },
+
   },
 };
 </script>
