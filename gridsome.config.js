@@ -7,6 +7,10 @@
 module.exports = {
     siteName: 'Designers Transverses',
 
+    chainWebpack (config) {
+        config.mode('development')
+    },
+
     plugins: [
 
         // Évènements
