@@ -24,6 +24,7 @@
             </div>
           </div>
         </div>
+        <!--
         <nav
           id="header-navigation"
           class="fr-nav"
@@ -53,6 +54,7 @@
             </li>
           </ul>
         </nav>
+        -->
       </div>
     </div>
   </header>

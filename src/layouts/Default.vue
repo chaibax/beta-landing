@@ -8,9 +8,6 @@
             <a class="fr-link" href="#content">Accéder au contenu</a>
           </li>
           <li>
-            <a class="fr-link" href="#header-navigation">Accéder au menu</a>
-          </li>
-          <li>
             <a class="fr-link" href="#footer">Accéder au pied de page</a>
           </li>
         </ul>
@@ -19,7 +16,7 @@
 
     <Header :service_name="$static.metadata.siteName" />
 
-    <div id="content" class="fr-my-4w">
+    <div id="content" class="fr-my-0w">
       <slot />
     </div>
 
@@ -36,8 +33,8 @@
           </div>
           <div class="fr-footer__content">
             <p class="fr-footer__content-desc">
-              Les Designers Transverses sont des membres de la communauté
-              <a href="https://beta.gouv.fr/">beta.gouv.fr</a>. <br />Le
+              Ces landing sont inspirées du travai des Designers Transverses de la communauté
+              <a href="https://beta.gouv.fr/">beta.gouv.fr</a>. Le
               <a href="https://github.com/betagouv/designers-transverses"
                 >code source</a
               >
@@ -60,10 +57,6 @@
               <a class="fr-footer__bottom-link" href="/accessibility">Accessibilité : non conforme</a>
             </li>
           </ul>
-          <div class="fr-footer__bottom-copy">
-            <p>Sauf mention contraire, tous les textes de ce site sont sous <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" target="_blank">licence etalab-2.0</a>
-            </p>
-          </div>
         </div>
       </div>
     </footer>

@@ -3,28 +3,30 @@
     <div>
       <section
         class="hero"
-        :style="{ 'background-image': 'url(./images/home.svg)', 'background-repeat' : '' }"
+        :style="{ 'background-image': 'url(./images/home.svg)' }"
       >
         <div class="fr-container">
           <div class="fr-grid-row fr-grid-row--gutters">
             <div class="fr-col">
               <div class="promise">
-                <h1>Une landing page qui tape pour ta startup</h1>
+                <h1>Les startups d'état ont besoin de landing pages!</h1>
                 <p>
-                Une façon simple de faire une landing page pour tester ta proposition de valeur,
-                 récupérer des beta testeurs pendant la phase d'investigation, personnaliser ton message pour un type
-                 de prescripteur ou administration, optimiser ta campagne Google Adwords, Facebook Ads ou ton SEO avec des landing page
+                 Ca devrait être simple de faire une landing page pour tester une proposition de valeur,
+                 récupérer des beta testeurs pendant la phase d'investigation, personnaliser son message pour un type
+                 de prescripteur, optimiser sa campagne Google Adwords, Facebook Ads ou son SEO avec des landing page
                  dédiées.
                 </p>
-               
+              
               </div>
+            </div>
+            <div class="fr-col">
               <div class="promise">
-                 <div class="action all-events">
-                    
-              <g-link to="/" class="fr-btn fr-btn--md"
+                <div class="action all-events">
+                     <p>
+              <g-link to="/events" class="fr-btn fr-btn--md"
                 >Je veux ma landing page!</g-link
               >
-
+               </p>
                
             </div>
               </div>
@@ -93,7 +95,7 @@
                 <h2 class="fr-card__title">Template #3</h2>
                 <p class="fr-card__desc">
                  On va pas te mentir : y a pas de template #3. Par contre, si tu as une idée de landing page, qui pourrait être sympa et être utilisé 
-                 par d'autre startup d'état, balance moi un ptit email.
+                 par d'autre startup d'état, balance moi un ptit email
                 </p>
                 <div class="call-to-action">
                    <a
@@ -126,12 +128,20 @@
             <div class="fr-col-12 fr-col-md-3">
               <div class="fr-card fr-card--no-arrow">
                 <div class="fr-card__body">
-                  <h2 class="fr-card__title">#1 un compte Github</h2>
+                  <h2 class="fr-card__title">Vous venez d'arriver ?</h2>
                   <p class="fr-card__desc">
-                    Il te faut un compte Github qui soit lié a beta.gouv. Ca prouve que tu es membre de la communauté et 
-                    ca nous permet de savoir qui a fait quoi. 
+                    Bienvenue, faisons connaissance ! Vous avez probablement des
+                    questions :)
                   </p>
-                
+                  <div class="call-to-action">
+                    <a
+                      href="https://startups-detat.slack.com/archives/CV6B2G6JD"
+                      aria-label="'Venez dire bonjour (nouvelle fenêtre)'"
+                      target="_blank"
+                      class="fr-btn fr-btn--sm fr-fi-external-link-line fr-btn--icon-right"
+                      >Se présenter</a
+                    >
+                  </div>
                 </div>
                 <figure
                   class="illustration"
@@ -143,12 +153,20 @@
             <div class="fr-col-12 fr-col-md-3">
               <div class="fr-card fr-card--no-arrow">
                 <div class="fr-card__body">
-                  <h2 class="fr-card__title">#2 choisi ton template</h2>
+                  <h2 class="fr-card__title">Échangez entre designers</h2>
                   <p class="fr-card__desc">
-                   Ok, c'est rapide car il y en a que 2, mais bon, ca va peut etre changer. Chaque template a des zones à personnaliser.
-                   Il te faudra bien te rappeler de leur nom pour la suite. 
+                    Partagez votre travail, demandez conseil ou organisez du
+                    pair design.
                   </p>
-                
+                  <div class="call-to-action">
+                    <a
+                      href="https://startups-detat.slack.com/archives/C010EFL3EQ4"
+                      aria-label="'Rejoindre Slack (nouvelle fenêtre)'"
+                      target="_blank"
+                      class="fr-btn fr-btn--sm fr-fi-external-link-line fr-btn--icon-right"
+                      >Rejoindre Slack</a
+                    >
+                  </div>
                 </div>
                 <figure
                   class="illustration"
@@ -160,11 +178,20 @@
             <div class="fr-col-12 fr-col-md-3">
               <div class="fr-card fr-card--no-arrow">
                 <div class="fr-card__body">
-                  <h2 class="fr-card__title">#3 saisie le contenu </h2>
+                  <h2 class="fr-card__title">Besoin de ressources ?</h2>
                   <p class="fr-card__desc">
-                    Il te faudra saisir chaque élément : nom du produit, lien du call to action , slogan, etc . Certains sont facultatifs. Tu pourras faire des changement à tout moment.
+                    Parcourez la documentation sur les outils : design system,
+                    TestApic, etc.
                   </p>
-               
+                  <div class="call-to-action">
+                    <a
+                      href="https://doc.incubateur.net/design/"
+                      aria-label="'Voir la documentation (nouvelle fenêtre)'"
+                      target="_blank"
+                      class="fr-btn fr-btn--sm fr-fi-external-link-line fr-btn--icon-right"
+                      >Voir la documentation</a
+                    >
+                  </div>
                 </div>
                 <figure
                   class="illustration"
@@ -178,12 +205,16 @@
             <div class="fr-col-12 fr-col-md-3">
               <div class="fr-card fr-card--no-arrow">
                 <div class="fr-card__body">
-                  <h2 class="fr-card__title">#4 publie ta page</h2>
+                  <h2 class="fr-card__title">Participez aux cafés designers</h2>
                   <p class="fr-card__desc">
-                   Pour savoir à quoi ca va ressembler, tu dois la publier. Pas de stress, elle n'est visible que de ceux qui on le line
-                   pour la consulter (que toi au début)
+                    Rencontrez des collègues pour échanger sur notre pratique et
+                    nos expériences.
                   </p>
-                
+                  <div class="call-to-action">
+                    <a href="/events" class="fr-btn fr-btn--sm"
+                      >Voir les évènements</a
+                    >
+                  </div>
                 </div>
                 <figure
                   class="illustration"
@@ -196,11 +227,39 @@
           </div>
         </div>
       </section>
+
+      <div class="fr-container">
+        <div class="fr-grid-row fr-grid-row--gutters">
+          <div class="fr-col">
+            <h1>Nos évènements à venir</h1>
+          </div>
+        </div>
+
+        <div class="fr-grid-row fr-grid-row--gutters">
+          <div
+            class="fr-col-12 fr-col-md-3"
+            v-for="(edge, index) in incomingEvents"
+            :key="edge.node.id"
+          >
+            <EventCard :event="edge.node" />
+          </div>
+        </div>
+
+        <div class="fr-grid-row fr-grid-row--gutters">
+          <div class="fr-col-12">
+            <div class="action all-events">
+              <g-link to="/events" class="fr-btn fr-btn--md"
+                >Voir tous les évènements</g-link
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </Layout>
 </template>
 
-
+<page-query>
   query Events {
     events: allEvent(sortBy: "date", order: ASC) {
       edges {
@@ -251,11 +310,11 @@ export default {
 
 <style lang="scss">
 .hero {
-  height: 35em;
+  height: 30em;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: -0em;
+  margin-bottom: -4em;
 
   //background: url('');
   background-size: cover;
