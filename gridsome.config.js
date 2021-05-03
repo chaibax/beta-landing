@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-    siteName: 'Landing Page Builder beta.gouv',
+    siteName: 'Landing Page Builder',
    
     transformers: {
         remark: {
