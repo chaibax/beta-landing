@@ -9,8 +9,12 @@
   "dependencies": {
     "@gouvfr/dsfr": "^1.0.0-rc1.0",
     "@gridsome/source-airtable": "^0.2.0",
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.6.4",
     "gridsome": "^0.7.0",
+    "gridsome-plugin-netlify-cms": "^1.0.9",
     "install": "^0.13.0",
+    "netlify-cms": "^2.10.118",
     "node-sass": "4",
     "sass-loader": "7"
   }
