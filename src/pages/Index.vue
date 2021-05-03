@@ -9,11 +9,12 @@
           <div class="fr-grid-row fr-grid-row--gutters">
             <div class="fr-col">
               <div class="promise">
-                <h1>Votre service numérique a besoin de design !</h1>
+                <h1>Les startups d'état ont besoin de landing pages!</h1>
                 <p>
-                  L'équipe de Designers Transverses est là pour vous aider à
-                  concevoir des services publics numériques accessibles et
-                  simples d'usage.
+                 Ca devrait être simple de faire une landing page pour tester une proposition de valeur,
+                 récupérer des beta testeurs pendant la phase d'investigation, personnaliser son message pour un type
+                 de prescripteur, optimiser sa campagne Google Adwords, Facebook Ads ou son SEO avec des landing page
+                 dédiées.
                 </p>
               </div>
             </div>
