@@ -16,87 +16,22 @@ module.exports = {
       },
 
     plugins: [
-        // Landing 
-        {
+     
+           // Landing 
+           {
             use: '@gridsome/source-filesystem',
             options: {
               typeName: 'Landing',
-              path: './landing/*.md',
+              path: './landing/*.md', // path: 'posts/**/*.md',
             }
           }
-        ,
-        // Évènements
-        {
-          use: '@gridsome/source-airtable',
-          options: {
-            apiKey: 'keybQLCgbSWWJqps8',
-            base: 'appTCC7VS12lEj0oV', // Évènements
-            tables: [
-                {
-                    name: 'Planning', // required
-                    typeName: 'Event', // required
-                    select: {},
-                    links: [{
-                        fieldName: "Type",
-                        typeName: "EventType",
-                        linkToFirst: true
-                    }]
-                },
-                {
-                    name: 'Évènements', // required
-                    typeName: 'EventType', // required
-                    select: {},
-                    links: []
-                }
-            ],
-          },
-        },
-
-         // Designers et start-ups
-        {
-          use: '@gridsome/source-airtable',
-          options: {
-            apiKey: 'keybQLCgbSWWJqps8',
-            base: 'appt60lhtZtqGytRF', // Base Designers 
-            tables: [
-                {
-                    name: "Startups d'État", // required
-                    typeName: 'Startup', // required
-                },
-                {
-                    name: "Designers", // required
-                    typeName: 'Designer', // required
-                },
-                {
-                    name: "Missions", // required
-                    typeName: 'Mission', // required
-                }
-            ],
-          },
-        },
-
-
+,
         // Guides
-        {
-          use: '@gridsome/source-airtable',
-          options: {
-            apiKey: 'keybQLCgbSWWJqps8',
-            base: 'app7SfpgBL8rbWw8V',
-            tables: [
-                {
-                    name: 'Guides', // required
-                    typeName: 'Guide', // required
-                    select: {},
-                    links: []
-                }
-            ],
-          },
-        },
         {
             use: '@gridsome/source-filesystem',
             options: {
-              path: 'posts/**/*.md',
-              typeName: 'Post'
+              path: 'landing/*.md',
+              typeName: 'Landing1'
             }
           },
           {
@@ -109,8 +44,25 @@ module.exports = {
     ],
     
     templates: {
-        Landing: "/ld/:id"
-    }
+
+      Landing1: [
+        {
+          path: '/landing1/:title',
+          component: './src/pages/Landing1.vue'
+        }
+      ]
+      , 
+      Landing2: [
+        {
+          path: '/landing2/:title',
+          component: './src/pages/Landing2.vue'
+        }
+      ]
+    } 
+
+   
+  
+
 
 }
 

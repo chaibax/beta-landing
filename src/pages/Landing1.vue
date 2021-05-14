@@ -42,7 +42,7 @@
                 </p>
                 <div class="call-to-action">
                   <a
-                    href="/landing-1"
+                    href="/landing1"
                     aria-label="'Réserver un check-up (nouvel onglet)'"
                     target="_blank"
                     class="fr-btn fr-btn--sm fr-fi-external-link-line fr-btn--icon-right"
@@ -69,7 +69,7 @@
                 </p>
                 <div class="call-to-action">
                   <a
-                    href="/landing-2"
+                    href="/landing2"
                     aria-label="'Demander de l'aide (nouvel onglet)'"
                     target="_blank"
                     class="fr-btn fr-btn--sm fr-fi-external-link-line fr-btn--icon-right"
@@ -197,29 +197,6 @@
   </Layout>
 </template>
 
-
-  query Events {
-    events: allEvent(sortBy: "date", order: ASC) {
-      edges {
-        node {
-          id
-          titre
-          pour
-          date
-          inscription
-          compteRendu
-          type {
-            name
-            pour
-            illustration {
-              url
-            }
-          }
-        }
-      }
-    }
-  }
-</page-query>
 
 <script>
 import moment from "moment";

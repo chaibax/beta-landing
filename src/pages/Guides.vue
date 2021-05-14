@@ -34,22 +34,6 @@
   </Layout>
 </template>
 
-<page-query>
-query Events {
-    events: allGuide {
-        edges {
-            node {
-                titre
-                description
-                lien
-                illustration {
-                    url
-                }
-            }
-        }
-    }
-}
-</page-query>
 
 
 <script>

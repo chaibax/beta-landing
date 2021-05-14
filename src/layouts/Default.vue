@@ -33,8 +33,8 @@
           </div>
           <div class="fr-footer__content">
             <p class="fr-footer__content-desc">
-              Ces landing sont inspirées du travai des Designers Transverses de la communauté
-              <a href="https://beta.gouv.fr/">beta.gouv.fr</a>. Le
+              Ces landings sont inspirées du travail des Designers Transverses de la communauté
+              <a href="https://beta.gouv.fr/">beta.gouv.fr</a> et du système de design de l'État. Le
               <a href="https://github.com/betagouv/designers-transverses"
                 >code source</a
               >

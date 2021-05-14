@@ -147,7 +147,7 @@
                 <div class="kpis">
                   <div class="kpi">
                     <h2>
-                      <strong>{{ allEvents }}</strong> évènements et rendez-vous
+                      <strong></strong> évènements et rendez-vous
                       liés au design
                     </h2>
                     <p>
@@ -184,50 +184,6 @@
   </Layout>
 </template>
 
-<page-query>
-query {
-
-    startups: allStartup {
-        edges {
-            node {
-                nom
-                phase
-                designers
-                phase
-                missions
-            }
-        }
-    }
-
-    designers: allDesigner {
-        edges {
-            node {
-                id
-                embarquement
-            }
-        }
-    }
-
-    missions: allMission {
-        edges {
-            node {
-                id
-                statut
-            }
-        }
-    }
-
-
-    events: allEvent {
-        edges {
-            node {
-                id
-            }
-        }
-    }
-
-}
-</page-query>
 
 
 <script>

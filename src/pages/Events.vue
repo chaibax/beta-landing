@@ -55,30 +55,6 @@
   </Layout>
 </template>
 
-<page-query>
-  query Events {
-    events: allEvent(sortBy: "date", order: ASC) {
-      edges {
-        node {
-          id
-          titre
-          pour
-          date
-          inscription
-          compteRendu
-          type {
-            name
-            pour
-            illustration {
-              url
-            }
-          }
-        }
-      }
-    }
-  }
-</page-query>
-
 
 <script>
 import Layout from "~/layouts/Default.vue";
