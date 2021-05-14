@@ -16,7 +16,15 @@ module.exports = {
       },
 
     plugins: [
-
+        // Landing 
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+              typeName: 'Landing',
+              path: './landing/*.md',
+            }
+          }
+        ,
         // Évènements
         {
           use: '@gridsome/source-airtable',
@@ -99,9 +107,9 @@ module.exports = {
           },
 
     ],
-
+    
     templates: {
-        //Event: "/events/:id"
+        Landing: "/ld/:id"
     }
 
 }

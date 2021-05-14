@@ -3,19 +3,27 @@
     <div>
       <section
         class="hero"
-        :style="{ 'background-image': 'url(./images/home.svg)' }"
+        :style="{ 'background-color': '#ffffff' }"
       >
         <div class="fr-container">
           <div class="fr-grid-row fr-grid-row--gutters">
             <div class="fr-col">
               <div class="promise">
-                <h1>Les startups d'état ont besoin de landing pages #1!</h1>
+                <h1>Lorem ipsum dolor sit amet</h1>
                 <p>
-                 Ca devrait être simple de faire une landing page pour tester une proposition de valeur,
-                 récupérer des beta testeurs pendant la phase d'investigation, personnaliser son message pour un type
-                 de prescripteur, optimiser sa campagne Google Adwords, Facebook Ads ou son SEO avec des landing page
-                 dédiées.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 </p>
+               
+              </div>
+              <div class="promise">
+                 <div class="action all-events">
+                    
+              <g-link to="/" class="fr-btn fr-btn--md"
+                >Lorem ipsum </g-link
+              >
+
+               
+            </div>
               </div>
             </div>
           </div>
@@ -34,7 +42,7 @@
                 </p>
                 <div class="call-to-action">
                   <a
-                    href="/"
+                    href="/landing-1"
                     aria-label="'Réserver un check-up (nouvel onglet)'"
                     target="_blank"
                     class="fr-btn fr-btn--sm fr-fi-external-link-line fr-btn--icon-right"
@@ -54,18 +62,18 @@
           <div class="fr-col-12 fr-col-md-4">
             <div class="fr-card fr-card--no-arrow">
               <div class="fr-card__body">
-                <h2 class="fr-card__title">Accompagnement</h2>
+                <h2 class="fr-card__title">Template #2</h2>
                 <p class="fr-card__desc">
-                  Pour être accompagné pour une problématique spécifique :
-                  organisation d'atelier, recherche utilisateur, conseil UX...
+                  La même chose que le template #1, mais avec une belle image pour illustrer. Ça peut être un visuel du (futur) produit,
+                  ou une illustration sympa. 
                 </p>
                 <div class="call-to-action">
                   <a
-                    href="https://airtable.com/shr6ASfxJDIz0RLhR"
+                    href="/landing-2"
                     aria-label="'Demander de l'aide (nouvel onglet)'"
                     target="_blank"
                     class="fr-btn fr-btn--sm fr-fi-external-link-line fr-btn--icon-right"
-                    >Demander de l'aide</a
+                    >Je veux voir ça</a
                   >
                 </div>
               </div>
@@ -79,14 +87,18 @@
           <div class="fr-col-12 fr-col-md-4">
             <div class="fr-card fr-card--no-arrow">
               <div class="fr-card__body">
-                <h2 class="fr-card__title">Formation</h2>
+                <h2 class="fr-card__title">Template #3</h2>
                 <p class="fr-card__desc">
-                  Des formations et guides pratiques pour vous aider tout au
-                  long d'évolution de votre produit.
+                 On va pas te mentir : y a pas de template #3. Par contre, si tu as une idée de landing page, qui pourrait être sympa et être utilisé 
+                 par d'autre startup d'état, balance moi un ptit email.
                 </p>
                 <div class="call-to-action">
-                  <g-link to="/guides" class="fr-btn fr-btn--sm"
-                    >Découvrir nos guides</g-link
+                   <a
+                    href="mailto:chaib.martinez@beta.gouv.fr"
+                    aria-label="'Demander de l'aide (nouvel onglet)'"
+                    target="_blank"
+                    class="fr-btn fr-btn--sm fr-fi-external-link-line fr-btn--icon-right"
+                    >J'ai une idée</a
                   >
                 </div>
               </div>
@@ -99,12 +111,93 @@
         </div>
       </div>
 
-    
+      <section class="designers">
+        <div class="fr-container">
+          <div class="fr-grid-row fr-grid-row--gutters">
+            <div class="fr-col">
+              <h1>Comment créer sa landing page?</h1>
+            </div>
+          </div>
+
+          <div class="fr-grid-row fr-grid-row--gutters">
+            <div class="fr-col-12 fr-col-md-3">
+              <div class="fr-card fr-card--no-arrow">
+                <div class="fr-card__body">
+                  <h2 class="fr-card__title">#1 un compte Github</h2>
+                  <p class="fr-card__desc">
+                    Il te faut un compte Github qui soit lié a beta.gouv. Ca prouve que tu es membre de la communauté et 
+                    ca nous permet de savoir qui a fait quoi. 
+                  </p>
+                
+                </div>
+                <figure
+                  class="illustration"
+                  :style="{ 'background-image': 'url(./images/welcome.svg)' }"
+                ></figure>
+              </div>
+            </div>
+
+            <div class="fr-col-12 fr-col-md-3">
+              <div class="fr-card fr-card--no-arrow">
+                <div class="fr-card__body">
+                  <h2 class="fr-card__title">#2 choisi ton template</h2>
+                  <p class="fr-card__desc">
+                   Ok, c'est rapide car il y en a que 2, mais bon, ca va peut etre changer. Chaque template a des zones à personnaliser.
+                   Il te faudra bien te rappeler de leur nom pour la suite. 
+                  </p>
+                
+                </div>
+                <figure
+                  class="illustration"
+                  :style="{ 'background-image': 'url(./images/interview.svg)' }"
+                ></figure>
+              </div>
+            </div>
+
+            <div class="fr-col-12 fr-col-md-3">
+              <div class="fr-card fr-card--no-arrow">
+                <div class="fr-card__body">
+                  <h2 class="fr-card__title">#3 saisie le contenu </h2>
+                  <p class="fr-card__desc">
+                    Il te faudra saisir chaque élément : nom du produit, lien du call to action , slogan, etc . Certains sont facultatifs. Tu pourras faire des changement à tout moment.
+                  </p>
+               
+                </div>
+                <figure
+                  class="illustration"
+                  :style="{
+                    'background-image': 'url(./images/documentation.svg)',
+                  }"
+                ></figure>
+              </div>
+            </div>
+
+            <div class="fr-col-12 fr-col-md-3">
+              <div class="fr-card fr-card--no-arrow">
+                <div class="fr-card__body">
+                  <h2 class="fr-card__title">#4 publie ta page</h2>
+                  <p class="fr-card__desc">
+                   Pour savoir à quoi ca va ressembler, tu dois la publier. Pas de stress, elle n'est visible que de ceux qui on le line
+                   pour la consulter (que toi au début)
+                  </p>
+                
+                </div>
+                <figure
+                  class="illustration"
+                  :style="{
+                    'background-image': 'url(./images/cafe-designers.svg)',
+                  }"
+                ></figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </Layout>
 </template>
 
-<page-query>
+
   query Events {
     events: allEvent(sortBy: "date", order: ASC) {
       edges {
@@ -155,11 +248,11 @@ export default {
 
 <style lang="scss">
 .hero {
-  height: 30em;
+  height: 35em;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: -4em;
+  margin-bottom: -0em;
 
   //background: url('');
   background-size: cover;
