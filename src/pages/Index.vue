@@ -44,12 +44,11 @@
                  un slogan, un bouton avec ce que vous voulez derrière. What else?
                 </p>
                 <div class="call-to-action">
-                  <a
-                    href="/landing1"
+                   <g-link
+                    to="/l/ma-proposition-de-valeur"
                     aria-label="'Réserver un check-up (nouvel onglet)'"
-                    target="_blank"
                     class="fr-btn fr-btn--sm fr-fi-external-link-line fr-btn--icon-right"
-                    >Je veux voir ça</a
+                    >Je veux voir ça</g-link
                   >
                 </div>
               </div>
@@ -72,7 +71,7 @@
                 </p>
                 <div class="call-to-action">
                   <a
-                    href="/landing2"
+                    href=""
                     aria-label="'Demander de l'aide (nouvel onglet)'"
                     target="_blank"
                     class="fr-btn fr-btn--sm fr-fi-external-link-line fr-btn--icon-right"

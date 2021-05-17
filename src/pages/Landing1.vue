@@ -201,6 +201,7 @@ query Landing1 ($id: ID!) {
   landing1(id: $id) {
     title
     excerpt
+  
   }
 }
 </page-query>
@@ -212,6 +213,7 @@ import EventCard from "~/components/EventCard.vue";
 moment.updateLocale("fr", {});
 
 export default {
+
   metaInfo: {
     title: "Du design pour votre Startup d'État",
   },
