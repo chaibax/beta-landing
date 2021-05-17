@@ -9,10 +9,9 @@
           <div class="fr-grid-row fr-grid-row--gutters">
             <div class="fr-col">
               <div class="promise">
-                <h1>Lorem ipsum dolor sit amet</h1>
+                <h1>{{ $page.landing1.title || "Proposition de  valeur"}}</h1>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                </p>
+{{ $page.landing1.excerpt || "Descrption/détail"}}               </p>
                
               </div>
               <div class="promise">
@@ -196,6 +195,15 @@
     </div>
   </Layout>
 </template>
+
+<page-query>
+query Landing1 ($id: ID!) {
+  landing1(id: $id) {
+    title
+    excerpt
+  }
+}
+</page-query>
 
 
 <script>

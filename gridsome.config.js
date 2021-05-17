@@ -17,23 +17,17 @@ module.exports = {
 
     plugins: [
      
-           // Landing 
-           {
-            use: '@gridsome/source-filesystem',
-            options: {
-              typeName: 'Landing',
-              path: './landing/*.md', // path: 'posts/**/*.md',
-            }
-          }
-,
+
         // Guides
         {
-            use: '@gridsome/source-filesystem',
-            options: {
-              path: 'landing/*.md',
-              typeName: 'Landing1'
-            }
-          },
+          use: '@gridsome/vue-remark',
+          options: {
+            typeName: 'Landing1', // Required
+            baseDir: './landing1/', // Where .md files are located
+            pathPrefix: '/l', // Add route prefix. Optional
+            template: './src/pages/Landing1.vue' // Optional
+          }
+        },
           {
             use: `gridsome-plugin-netlify-cms`,
             options: {
@@ -41,24 +35,7 @@ module.exports = {
             }
           },
 
-    ],
-    
-    templates: {
-
-      Landing1: [
-        {
-          path: '/landing1/:title',
-          component: './src/pages/Landing1.vue'
-        }
-      ]
-      , 
-      Landing2: [
-        {
-          path: '/landing2/:title',
-          component: './src/pages/Landing2.vue'
-        }
-      ]
-    } 
+    ]
 
    
   

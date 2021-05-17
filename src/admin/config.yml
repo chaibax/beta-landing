@@ -7,9 +7,9 @@ media_folder: "static/uploads"
 public_folder: "/uploads"
 
 collections:
-  - name: "landing"
-    label: "Landing"
-    folder: "landing"
+  - name: "landing1"
+    label: "Landing1"
+    folder: "landing1"
     create: true
     slug: "{{slug}}"
     fields:
